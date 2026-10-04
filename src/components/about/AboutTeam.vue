@@ -337,17 +337,17 @@
   
   /* -------- Featured leader -------- */
   const featured = {
-    name: 'Chief Adewale Ogundipe',
+    name: 'Mr Emeka Christian Okeke',
     role: 'Founder & Managing Director',
-    photo: '/images/team-founder.jpg',
+    photo: '/about/founder.jpeg',
     linkedin: 'https://linkedin.com',
-    tenure: '15 years',
+    tenure: '8 years',
     quote:
       'Agriculture is the only business I know where patience compounds into legacy. That\'s what we\'re building here.',
     facts: [
-      { value: '15 yrs', label: 'Leadership' },
+      { value: '8 yrs', label: 'Leadership' },
       { value: '1,200+ ha', label: 'Under Management' },
-      { value: '340+', label: 'People Employed' },
+      { value: '34+', label: 'People Employed' },
     ],
   }
   
@@ -364,59 +364,60 @@
   
   const team: TeamMember[] = [
     {
-      name: 'Dr. Ngozi Okafor',
-      role: 'Chief Agronomist',
+      name: 'Ejike Wilfred Okeke',
+      role: 'Co Founder',
       department: 'Agronomy',
-      photo: '/images/farm1.jpg',
-      linkedin: 'https://linkedin.com',
-      tenure: '9 years',
-      location: 'Ondo',
-    },
-    {
-      name: 'Ibrahim Musa',
-      role: 'Head of Operations',
-      department: 'Operations',
-      photo: '',
+      photo: '/about/founder3.jpeg',
       linkedin: 'https://linkedin.com',
       tenure: '7 years',
-      location: 'Cross River',
+      location: 'Anambra',
     },
     {
-      name: 'Chiamaka Eze',
+      name: 'Uche Lucy Okeke',
+      role: 'Head of Operations',
+      department: 'Operations',
+      photo: '/about/founder2.jpeg',
+      linkedin: 'https://linkedin.com',
+      tenure: '7 years',
+      location: 'Anambra',
+    },
+    {
+      name: 'Emeka Christian Okeke',
       role: 'Chief Financial Officer',
       department: 'Finance',
-      photo: '',
+      photo: '/about/founder1.jpeg',
       linkedin: 'https://linkedin.com',
       tenure: '5 years',
       location: 'Lagos',
     },
-    {
-      name: 'Tunde Bakare',
-      role: 'Head of Sustainability',
-      department: 'Sustainability',
-      photo: '',
-      linkedin: 'https://linkedin.com',
-      tenure: '6 years',
-      location: 'Ogun',
-    },
-    {
-      name: 'Blessing Ekanem',
-      role: 'Community Programs Lead',
-      department: 'Community',
-      photo: '',
-      linkedin: 'https://linkedin.com',
-      tenure: '4 years',
-      location: 'Akwa Ibom',
-    },
-    {
-      name: 'Ahmed Suleiman',
-      role: 'Head of Export & Logistics',
-      department: 'Trade',
-      photo: '',
-      linkedin: 'https://linkedin.com',
-      tenure: '6 years',
-      location: 'Lagos',
-    },
+
+    // {
+    //   name: 'Tunde Bakare',
+    //   role: 'Head of Sustainability',
+    //   department: 'Sustainability',
+    //   photo: '',
+    //   linkedin: 'https://linkedin.com',
+    //   tenure: '6 years',
+    //   location: 'Ogun',
+    // },
+    // {
+    //   name: 'Blessing Ekanem',
+    //   role: 'Community Programs Lead',
+    //   department: 'Community',
+    //   photo: '',
+    //   linkedin: 'https://linkedin.com',
+    //   tenure: '4 years',
+    //   location: 'Akwa Ibom',
+    // },
+    // {
+    //   name: 'Ahmed Suleiman',
+    //   role: 'Head of Export & Logistics',
+    //   department: 'Trade',
+    //   photo: '',
+    //   linkedin: 'https://linkedin.com',
+    //   tenure: '6 years',
+    //   location: 'Lagos',
+    // },
   ]
   
   /* ---------------------------------------------------------------

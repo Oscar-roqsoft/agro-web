@@ -60,7 +60,7 @@
                    text-[clamp(1.75rem,4vw,2.75rem)] leading-[1.1]
                    tracking-[-0.025em] mb-5"
           >
-            Fifteen years,<br />
+            eight years,<br />
             <span class="text-harvest-400">in numbers.</span>
           </h2>
   
@@ -236,7 +236,7 @@
       icon: icons.leaf,
     },
     {
-      value: 340,
+      value: 30,
       suffix: '+',
       decimals: 0,
       label: 'People Directly Employed',

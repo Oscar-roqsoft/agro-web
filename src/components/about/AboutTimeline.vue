@@ -299,28 +299,28 @@
   /* -------- Data -------- */
   const milestones: Milestone[] = [
     {
-      year: '2010',
+      year: '2018',
       tag: 'The Beginning',
-      title: 'A 40-hectare plot in Ondo State.',
+      title: 'A 40-hectare plot in Anambra State.',
       description:
         'Two brothers and a small team planted their first oil palm seedlings on family land — mostly by hand, with borrowed tools and a lot of hope.',
     },
     {
-      year: '2013',
+      year: '2019',
       tag: 'First Harvest',
       title: 'Our first palm harvest ships.',
       description:
         'Three years after planting, the first commercial yield of palm oil was pressed and sold locally. It funded the nursery for the next phase.',
     },
     {
-      year: '2016',
+      year: '2020',
       tag: 'Expansion',
       title: 'Three new estates acquired.',
       description:
-        'We acquired land in Cross River, Ogun, and Akwa Ibom — diversifying into cocoa, rubber, and plantain. The company became a true multi-crop operation.',
+        'We acquired land in Cross River, Enugu, and Akwa Ibom — diversifying into cocoa, rubber, and plantain. The company became a true multi-crop operation.',
     },
     {
-      year: '2019',
+      year: '2020',
       tag: 'Community',
       title: 'The Outgrower Program launches.',
       description:
@@ -334,7 +334,7 @@
         'Rainforest Alliance and ISO 14001 certifications earned. We pledged to restore 500 hectares of degraded land and reach carbon neutrality across all estates by 2030.',
     },
     {
-      year: '2025',
+      year: '2026',
       tag: 'Today',
       title: 'Six estates. 1,200+ hectares. And just getting started.',
       description:

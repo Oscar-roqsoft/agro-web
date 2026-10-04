@@ -103,7 +103,7 @@
               </div>
               <div>
                 <div class="font-display font-bold text-[1rem] text-[rgb(var(--text))] leading-tight">
-                  Chief Adewale Ogundipe
+                  Okeke Emeka Christian
                 </div>
                 <div class="text-[rgb(var(--text-muted))] text-[0.85rem] mt-0.5">
                   Founder & Managing Director
@@ -146,7 +146,7 @@
                      shadow-[0_30px_60px_-20px_rgba(0,0,0,0.25)]"
             >
               <img
-                src="/timeline/crops.jpg"
+                src="/about/founder1.jpeg"
                 alt="Founder standing in a mature palm plantation at golden hour"
                 fetchpriority="high"
                 class="absolute inset-0 w-full h-full object-cover"
