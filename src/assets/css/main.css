@@ -1,0 +1,73 @@
+/* assets/css/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg:          255 255 255;   /* white */
+    --bg-alt:      248 250 247;   /* F8FAF7 */
+    --surface:     255 255 255;
+    --text:        27 42 30;      /* 1B2A1E */
+    --text-muted:  91 107 95;     /* 5B6B5F */
+    --border:      27 42 30;      /* used with opacity */
+    --nav-bg:      255 255 255;
+  }
+
+  .dark {
+    --bg:          15 23 16;      /* 0F1710 */
+    --bg-alt:      22 32 26;      /* 16201A */
+    --surface:     22 32 26;
+    --text:        232 240 233;   /* E8F0E9 */
+    --text-muted:  155 170 158;   /* 9BAA9E */
+    --border:      232 240 233;
+    --nav-bg:      15 23 16;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    @apply bg-[rgb(var(--bg))] text-[rgb(var(--text))];
+    @apply transition-colors duration-300;
+    font-family: theme('fontFamily.sans');
+  }
+
+  /* Smooth theme transition except during toggle flash */
+  html:not(.no-transition),
+  html:not(.no-transition) * {
+    transition: background-color 0.35s ease, border-color 0.35s ease;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-[1400px] mx-auto px-6 lg:px-8;
+  }
+
+  .nav-link {
+    @apply relative px-3.5 py-2.5 text-[0.94rem] font-medium rounded-lg
+           text-[rgb(var(--text-muted))]
+           hover:text-leaf-500 hover:bg-leaf-500/10
+           transition-colors duration-200;
+  }
+
+  .nav-link.active {
+    @apply text-leaf-500 bg-leaf-500/10;
+  }
+
+  .nav-link.active::after {
+    content: '';
+    @apply absolute left-1/2 -translate-x-1/2 bottom-1 w-[18px] h-[3px]
+           rounded-full bg-harvest-500;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 text-[0.92rem] font-semibold
+           rounded-lg transition-all duration-200 whitespace-nowrap;
+  }
+
+  .btn-primary {
+    @apply bg-leaf-500 text-white shadow-glow
+           hover:bg-leaf-600 hover:-translate-y-0.5 hover:shadow-[0_8px_22px_rgba(46,125,50,0.4)];
+  }
+}
