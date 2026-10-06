@@ -337,9 +337,9 @@
   
   /* -------- Featured leader -------- */
   const featured = {
-    name: 'Mr Emeka Christian Okeke',
-    role: 'Founder & Managing Director',
-    photo: '/about/founder.jpeg',
+    name: 'Mrs Uche Lucy Okeke',
+    role: 'Co-Founder & Managing Director',
+    photo: '/about/founder3.jpeg',
     linkedin: 'https://linkedin.com',
     tenure: '8 years',
     quote:
@@ -365,15 +365,6 @@
   const team: TeamMember[] = [
     {
       name: 'Ejike Wilfred Okeke',
-      role: 'Co Founder',
-      department: 'Agronomy',
-      photo: '/about/founder3.jpeg',
-      linkedin: 'https://linkedin.com',
-      tenure: '7 years',
-      location: 'Anambra',
-    },
-    {
-      name: 'Uche Lucy Okeke',
       role: 'Head of Operations',
       department: 'Operations',
       photo: '/about/founder2.jpeg',
@@ -382,12 +373,21 @@
       location: 'Anambra',
     },
     {
+      name: 'Uche Lucy Okeke',
+      role: 'Head of Sustainability',
+      department: 'Sustainability',
+      photo: '/about/founder3.jpeg',
+      linkedin: 'https://linkedin.com',
+      tenure: '8 years',
+      location: 'Anambra',
+    },
+    {
       name: 'Emeka Christian Okeke',
       role: 'Chief Financial Officer',
       department: 'Finance',
       photo: '/about/founder1.jpeg',
       linkedin: 'https://linkedin.com',
-      tenure: '5 years',
+      tenure: '8 years',
       location: 'Lagos',
     },
 
