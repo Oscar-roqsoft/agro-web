@@ -161,7 +161,7 @@
                 ><span class="text-harvest-400">{{ s.suffix }}</span>
               </div>
               <div class="text-white/65 text-[0.72rem] uppercase
-                          tracking-wider font-semibold leading-tight">
+                          tracking-wider font-semibold leading-tight w-[50%]">
                 {{ s.label }}
               </div>
             </div>
@@ -170,7 +170,7 @@
       </div>
   
       <!-- ============ CROP FILTER CHIPS (bottom-right floating) ============ -->
-      <div
+      <!-- <div
         ref="chipsRef"
         class="hidden lg:flex absolute bottom-14 right-8 z-10
                flex-wrap gap-2 max-w-[420px] justify-end"
@@ -194,7 +194,7 @@
                 >
                 {{ crop }}
                 </button>
-      </div>
+      </div> -->
   
       <!-- ============ SCROLL INDICATOR ============ -->
       <div
