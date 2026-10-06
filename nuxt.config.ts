@@ -74,7 +74,7 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/png',
-          href: '/favicon.png'
+          href: '/favi.png'
         },
 
         // Apple / iOS icon
