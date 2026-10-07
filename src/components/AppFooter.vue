@@ -140,14 +140,14 @@
             <ul class="space-y-3">
               <li>
                 <a
-                  href="tel:+2340000000000"
+                  href="tel:+2348167037048"
                   class="inline-flex items-start gap-2.5
                          text-[rgb(var(--text-muted))] text-[0.88rem]
                          hover:text-leaf-600 dark:hover:text-leaf-400
                          transition-colors duration-200"
                 >
                   <span class="mt-0.5 text-leaf-500" v-html="icons.phone" />
-                  <span>+234 000 000 0000</span>
+                  <span>+234 816 703 7048</span>
                 </a>
               </li>
               <li>
@@ -159,7 +159,7 @@
                          transition-colors duration-200"
                 >
                   <span class="mt-0.5 text-leaf-500" v-html="icons.mail" />
-                  <span>hello@greenfieldagri.com</span>
+                  <span>chrismektechnology@gmail.com</span>
                 </a>
               </li>
               <li>
@@ -230,7 +230,7 @@
                  flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <div class="text-[rgb(var(--text-muted))] text-[0.82rem] text-center md:text-left">
-            © {{ currentYear }} GreenField Agri Estates Ltd. All rights reserved.
+            © {{ currentYear }} Chrismek technology Ltd. All rights reserved.
             <span class="hidden md:inline mx-1.5">·</span>
             <br class="md:hidden" />
             RC 1234567 · TIN 12345678-0001
@@ -296,7 +296,7 @@
     { name: 'LinkedIn',  href: 'https://linkedin.com',  icon: icons.linkedin },
     { name: 'X',         href: 'https://x.com',         icon: icons.x },
     { name: 'Instagram', href: 'https://instagram.com', icon: icons.instagram },
-    { name: 'WhatsApp',  href: 'https://wa.me/0000000000', icon: icons.whatsapp },
+    { name: 'WhatsApp',  href: 'https://wa.me/+2348167037048', icon: icons.whatsapp },
   ]
   
   /* -------- Link columns -------- */
@@ -307,7 +307,7 @@
         { label: 'About Us',      href: '/about' },
         { label: 'Our Process',   href: '/process' },
         { label: 'Sustainability', href: '/sustainability' },
-        { label: 'Careers',       href: '/careers' },
+        // { label: 'Careers',       href: '/careers' },
         { label: 'Contact',       href: '/contact' },
       ],
     },
@@ -325,22 +325,22 @@
       title: 'Resources',
       links: [
         { label: 'Harvest Calendar', href: '/harvest-calendar' },
-        { label: 'Blog & News',      href: '/blog' },
+        // { label: 'Blog & News',      href: '/blog' },
         { label: 'Impact Report',    href: '/impact-report' },
         { label: 'Case Studies',     href: '/case-studies' },
         { label: 'FAQ',              href: '/faq' },
       ],
     },
-    {
-      title: 'Investors',
-      links: [
-        { label: 'Invest Overview', href: '/invest' },
-        { label: 'Packages',        href: '/invest/packages' },
-        { label: 'Prospectus',      href: '/legal/prospectus' },
-        { label: 'ROI Calculator',  href: '/invest/calculator' },
-        { label: 'Book a Call',     href: '/contact?type=investor' },
-      ],
-    },
+    // {
+    //   title: 'Investors',
+    //   links: [
+    //     { label: 'Invest Overview', href: '/invest' },
+    //     { label: 'Packages',        href: '/invest/packages' },
+    //     { label: 'Prospectus',      href: '/legal/prospectus' },
+    //     { label: 'ROI Calculator',  href: '/invest/calculator' },
+    //     { label: 'Book a Call',     href: '/contact?type=investor' },
+    //   ],
+    // },
   ]
   
   const legalLinks = [

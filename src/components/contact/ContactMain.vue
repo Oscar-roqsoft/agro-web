@@ -304,7 +304,7 @@
   
                 <div class="space-y-5">
                   <a
-                    href="tel:+2340000000000"
+                    href="tel:+2348167037048"
                     class="flex items-start gap-3.5 group"
                   >
                     <span
@@ -320,7 +320,7 @@
                         Call Us
                       </div>
                       <div class="font-semibold text-[rgb(var(--text))] text-[0.98rem]">
-                        +234 000 000 0000
+                        +234 816 703 7048
                       </div>
                       <div class="text-[rgb(var(--text-muted))] text-[0.82rem] mt-0.5">
                         Mon–Fri, 8am–6pm WAT
@@ -329,7 +329,7 @@
                   </a>
   
                   <a
-                    href="mailto:hello@greenfieldagri.com"
+                    href="chrismektechnology@gmail.com"
                     class="flex items-start gap-3.5 group"
                   >
                     <span
@@ -345,7 +345,7 @@
                         Email Us
                       </div>
                       <div class="font-semibold text-[rgb(var(--text))] text-[0.98rem]">
-                        hello@greenfieldagri.com
+                        chrismektechnology@gmail.com
                       </div>
                       <div class="text-[rgb(var(--text-muted))] text-[0.82rem] mt-0.5">
                         Reply within 24 hours
@@ -354,7 +354,7 @@
                   </a>
   
                   <a
-                    href="https://wa.me/0000000000"
+                    href="https://wa.me/+2348167037048"
                     target="_blank"
                     rel="noopener"
                     class="flex items-start gap-3.5 group"
@@ -445,7 +445,7 @@
   
               <!-- WhatsApp big CTA -->
               <a
-                href="https://wa.me/0000000000"
+                href="https://wa.me/+2348167037048"
                 target="_blank"
                 rel="noopener"
                 class="block rounded-2xl p-6
