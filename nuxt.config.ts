@@ -133,7 +133,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
-        '/plantations/okitipupa-palm-estate'
+        '/plantations/palm'
       ]
     }
   },
