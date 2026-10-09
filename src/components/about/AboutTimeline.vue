@@ -201,7 +201,7 @@
             <div class="mt-6 flex items-center justify-center gap-3">
               <span class="w-8 h-px bg-[rgb(var(--border)/0.3)]" />
               <span class="text-[rgb(var(--text-muted))] text-[0.85rem] font-medium">
-                Chief Adewale Ogundipe, Founder
+                Mr Emeka Christian Okeke, Founder
               </span>
               <span class="w-8 h-px bg-[rgb(var(--border)/0.3)]" />
             </div>

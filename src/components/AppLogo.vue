@@ -5,7 +5,7 @@
     aria-label="Chrismek Technology Home"
   >
     <img
-      src="/favicon1.png"
+      src="/logo2.png"
       alt="Chrismek Technology"
       class="h-[80px] w-auto object-contain transition-transform duration-300
              group-hover:scale-[1.03]"

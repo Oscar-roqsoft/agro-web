@@ -49,7 +49,7 @@
               agronomy, finance, and community development experience across
               West Africa.
             </p>
-            <NuxtLink
+            <!-- <NuxtLink
               to="/careers"
               class="group inline-flex items-center gap-2
                      text-leaf-600 dark:text-leaf-400
@@ -62,7 +62,7 @@
                    stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M13 6l6 6-6 6"/>
               </svg>
-            </NuxtLink>
+            </NuxtLink> -->
           </div>
         </div>
   
@@ -295,7 +295,7 @@
           </div>
   
           <div class="relative z-10 flex flex-wrap gap-3 shrink-0">
-            <NuxtLink
+            <!-- <NuxtLink
               to="/careers"
               class="btn !px-6 !py-3.5
                      bg-white text-leaf-700 font-semibold
@@ -308,7 +308,7 @@
                    stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M13 6l6 6-6 6"/>
               </svg>
-            </NuxtLink>
+            </NuxtLink> -->
           </div>
         </div>
   
