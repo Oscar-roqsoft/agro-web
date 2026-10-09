@@ -133,7 +133,7 @@
               </svg>
             </NuxtLink>
 
-            <NuxtLink
+            <!-- <NuxtLink
               to="/about"
               class="btn !px-6 !py-3.5 !text-[0.95rem]
                      bg-white/10 backdrop-blur-md
@@ -150,7 +150,7 @@
                 </svg>
               </span>
               Watch Our Story
-            </NuxtLink>
+            </NuxtLink> -->
           </div>
 
           <!-- Stats row -->
@@ -258,8 +258,8 @@
         <!-- ============ CHRISMek TECHNOLOGY CREDIT (added) ============ -->
         <div
       ref="creditRef"
-      class="absolute top-24 lg:top-28 right-6 lg:right-8 z-20
-             hidden md:flex flex-col items-end gap-1
+      class="absolute top-[450px] md:top-24 lg:top-28 right-6 lg:right-8 z-20
+             md:flex flex-col items-end gap-1
              pointer-events-none select-none"
     >
       <div
