@@ -118,8 +118,8 @@
     { label: 'Home',        to: '/' },
     { label: 'About',       to: '/about' },
     { label: 'Plantations', to: '/plantations' },
-    { label: 'Products',    to: '/products' },
-    { label: 'Invest',      to: '/invest' },
+    // { label: 'Products',    to: '/products' },
+    // { label: 'Invest',      to: '/invest' },
     { label: 'Contact',     to: '/contact' },
   ]
   

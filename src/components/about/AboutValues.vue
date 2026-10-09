@@ -60,7 +60,7 @@
               <span class="h-px w-10 bg-harvest-500/60" />
               <span class="text-[rgb(var(--text-muted))] text-[0.78rem]
                            uppercase tracking-[0.2em] font-semibold">
-                The GreenField Standard
+                The Chrismek Standard
               </span>
             </div>
   

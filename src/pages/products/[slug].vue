@@ -26,7 +26,7 @@
   }
   
   useHead(() => ({
-    title: `${product.value!.name} — GreenField Agri Estates`,
+    title: `${product.value!.name} — Chrismek Agri Estates`,
     meta: [
       {
         name: 'description',

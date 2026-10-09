@@ -81,7 +81,7 @@
             class="flex flex-wrap items-center gap-3 mt-8"
           >
             <a
-              href="tel:+2340000000000"
+              href="tel:+2348167037048"
               class="inline-flex items-center gap-2.5
                      px-4 py-2.5 rounded-xl
                      bg-[rgb(var(--surface))]
@@ -91,10 +91,10 @@
                      transition-all duration-300"
             >
               <span class="text-leaf-500" v-html="icons.phone" />
-              +234 000 000 0000
+              +234 816 703 7048
             </a>
             <a
-              href="mailto:hello@greenfieldagri.com"
+              href="mailto:chrismektechnology@gmail.com"
               class="inline-flex items-center gap-2.5
                      px-4 py-2.5 rounded-xl
                      bg-[rgb(var(--surface))]
@@ -104,10 +104,10 @@
                      transition-all duration-300"
             >
               <span class="text-leaf-500" v-html="icons.mail" />
-              hello@greenfieldagri.com
+              chrismektechnology@gmail.com
             </a>
             <a
-              href="https://wa.me/0000000000"
+              href="https://wa.me/+2348167037048"
               target="_blank"
               rel="noopener"
               class="inline-flex items-center gap-2.5

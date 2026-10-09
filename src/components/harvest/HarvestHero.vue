@@ -16,7 +16,7 @@
                bg-harvest-500/6 blur-3xl pointer-events-none"
         aria-hidden="true"
       />
-      <!-- Faint grid -->
+      <!-- Grid texture -->
       <div
         class="absolute inset-0 opacity-[0.35] dark:opacity-[0.12] pointer-events-none"
         style="background-image:
@@ -49,26 +49,29 @@
                class="text-[rgb(var(--text-muted)/0.5)]">
             <path d="m9 18 6-6-6-6"/>
           </svg>
-          <span class="text-[rgb(var(--text))] font-semibold">Process</span>
+          <span class="text-[rgb(var(--text))] font-semibold">Harvest Calendar</span>
         </nav>
   
         <!-- ============ MAIN GRID ============ -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
   
           <!-- ============ LEFT: STATEMENT ============ -->
-          <div class="lg:col-span-6">
+          <div class="lg:col-span-7">
   
             <!-- Eyebrow -->
             <div
               ref="eyebrowRef"
               class="inline-flex items-center gap-2.5 mb-6
                      px-3.5 py-1.5 rounded-full
-                     bg-leaf-500/10 border border-leaf-500/20
-                     text-leaf-600 dark:text-leaf-400
+                     bg-harvest-500/10 border border-harvest-500/20
+                     text-harvest-700 dark:text-harvest-400
                      text-[0.78rem] font-semibold tracking-wider uppercase"
             >
-              <span class="w-1.5 h-1.5 rounded-full bg-leaf-500" />
-              Our Operating Model
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-harvest-400 opacity-75" />
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-harvest-500" />
+              </span>
+              Live harvest schedule
             </div>
   
             <!-- Headline -->
@@ -78,9 +81,9 @@
                      text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.05]
                      tracking-[-0.035em] text-[rgb(var(--text))] mb-7 max-w-2xl"
             >
-              Fifteen years of<br />
-              farming, reduced to<br />
-              <span class="text-leaf-500">five honest steps.</span>
+              What's ready now,<br />
+              and what's coming<br />
+              <span class="text-leaf-500">for years ahead.</span>
             </h1>
   
             <!-- Lead paragraph -->
@@ -89,9 +92,9 @@
               class="text-[rgb(var(--text-muted))] text-[1.08rem] leading-relaxed
                      max-w-xl mb-10"
             >
-              Every estate we manage follows the same disciplined process — from
-              raw land to final delivery. Nothing here is theoretical. This is
-              exactly how we operate, documented and reproducible.
+              Every harvest window across our six estates — updated as crops
+              mature. Plan your sourcing, coordinate deliveries, or reserve
+              future volumes. No surprises.
             </p>
   
             <!-- CTAs -->
@@ -100,10 +103,10 @@
               class="flex flex-wrap items-center gap-3.5 mb-12"
             >
               <a
-                href="#process-steps"
+                href="#calendar"
                 class="btn btn-primary !px-6 !py-3.5 !text-[0.95rem]"
               >
-                See the Five Steps
+                View Full Calendar
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                      stroke="currentColor" stroke-width="2.4"
                      stroke-linecap="round" stroke-linejoin="round">
@@ -111,7 +114,7 @@
                 </svg>
               </a>
               <NuxtLink
-                to="/contact?type=partner&topic=process"
+                to="/contact?type=buyer"
                 class="btn !px-6 !py-3.5 !text-[0.95rem]
                        bg-[rgb(var(--surface))]
                        border border-[rgb(var(--border)/0.15)]
@@ -122,10 +125,10 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                      stroke="currentColor" stroke-width="2.2"
                      stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <path d="M14 2v6h6"/>
+                  <rect x="2" y="4" width="20" height="16" rx="3"/>
+                  <path d="m2 7 10 7 10-7"/>
                 </svg>
-                Request Full SOP
+                Reserve Future Volume
               </NuxtLink>
             </div>
   
@@ -159,157 +162,114 @@
             </div>
           </div>
   
-          <!-- ============ RIGHT: PROCESS FLOW CARD ============ -->
+          <!-- ============ RIGHT: LIVE STATUS CARD ============ -->
           <div
-            ref="flowCardRef"
-            class="lg:col-span-6 relative"
+            ref="statusCardRef"
+            class="lg:col-span-5 relative"
           >
             <div
-              class="relative rounded-2xl overflow-hidden
-                     bg-[rgb(var(--surface))]
-                     border border-[rgb(var(--border)/0.08)]
-                     shadow-[0_30px_60px_-20px_rgba(0,0,0,0.12)]"
+              class="relative rounded-3xl overflow-hidden
+                     bg-gradient-to-br from-leaf-700 via-leaf-800 to-leaf-900
+                     p-7 lg:p-8
+                     shadow-[0_30px_60px_-20px_rgba(46,125,50,0.4)]"
             >
-              <!-- Card header -->
-              <div
-                class="flex items-center justify-between gap-3
-                       px-6 lg:px-7 py-5
-                       bg-gradient-to-br from-leaf-700 via-leaf-800 to-leaf-900
-                       text-white"
-              >
+              <!-- Decorative circles -->
+              <div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-white/5" />
+              <div class="absolute -right-4 top-1/3 w-24 h-24 rounded-full bg-white/5" />
+              <div class="absolute -left-8 -bottom-8 w-40 h-40 rounded-full bg-white/5" />
+  
+              <!-- Header -->
+              <div class="relative z-10 flex items-center justify-between gap-3 mb-7">
                 <div class="flex items-center gap-3">
                   <span
-                    class="grid place-items-center w-10 h-10 rounded-xl
+                    class="grid place-items-center w-11 h-11 rounded-xl
                            bg-white/10 backdrop-blur-md border border-white/15
                            text-harvest-400"
                   >
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                          stroke="currentColor" stroke-width="2"
                          stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M3 3v18h18"/>
-                      <path d="m19 9-5 5-4-4-3 3"/>
+                      <rect x="3" y="4" width="18" height="18" rx="3"/>
+                      <path d="M16 2v4M8 2v4M3 10h18"/>
                     </svg>
                   </span>
                   <div>
                     <div class="font-display font-bold text-white
                                 text-[1rem] leading-tight">
-                      Our Operating Model
+                      Live Status
                     </div>
                     <div class="text-white/60 text-[0.78rem]">
-                      5 stages · 15 years refined
+                      {{ currentMonth }} {{ currentYear }}
                     </div>
                   </div>
                 </div>
   
+                <!-- Live pulse -->
                 <span
-                  class="hidden sm:inline-flex items-center gap-1.5
-                         px-2.5 py-1 rounded-full
+                  class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full
                          bg-leaf-500/25 border border-leaf-400/40
                          text-leaf-100 text-[0.68rem] font-bold uppercase tracking-wider"
                 >
                   <span class="w-1.5 h-1.5 rounded-full bg-leaf-400 animate-pulse" />
-                  Proven
+                  Live
                 </span>
               </div>
   
-              <!-- Steps flow -->
-              <div class="p-6 lg:p-7">
-                <div class="relative">
-                  <!-- Connecting vertical line -->
-                  <div
-                    class="absolute left-[19px] top-3 bottom-3 w-px
-                           bg-gradient-to-b from-leaf-500 via-leaf-400 to-harvest-500
-                           opacity-40"
-                    aria-hidden="true"
-                  />
-  
-                  <!-- Steps -->
-                  <div class="space-y-5">
-                    <div
-                      v-for="(step, i) in steps"
-                      :key="step.number"
-                      class="flow-step relative flex items-start gap-4
-                             p-3.5 rounded-xl
-                             transition-all duration-300
-                             hover:bg-[rgb(var(--bg-alt)/0.6)]"
-                    >
-                      <!-- Number -->
-                      <span
-                        class="shrink-0 grid place-items-center
-                               w-10 h-10 rounded-full
-                               bg-[rgb(var(--surface))]
-                               border-2 border-leaf-500
-                               font-display font-extrabold
-                               text-[0.85rem] text-leaf-600 dark:text-leaf-400
-                               relative z-10"
-                      >
-                        {{ step.number }}
-                      </span>
-  
-                      <!-- Content -->
-                      <div class="flex-1 min-w-0 pt-0.5">
-                        <div class="flex items-baseline justify-between gap-3 mb-1">
-                          <div class="font-display font-bold text-[rgb(var(--text))]
-                                      text-[0.98rem] leading-tight">
-                            {{ step.title }}
-                          </div>
-                          <span
-                            class="text-[0.7rem] uppercase tracking-wider
-                                   font-bold text-[rgb(var(--text-muted))]
-                                   whitespace-nowrap hidden sm:block"
-                          >
-                            {{ step.duration }}
-                          </span>
-                        </div>
-                        <div class="text-[rgb(var(--text-muted))] text-[0.84rem]
-                                    leading-snug">
-                          {{ step.short }}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <!-- Footer stats -->
+              <!-- Stats stack -->
+              <div class="relative z-10 space-y-5">
                 <div
-                  class="grid grid-cols-3 gap-4 mt-7 pt-6
-                         border-t border-[rgb(var(--border)/0.08)]"
+                  v-for="(stat, i) in liveStats"
+                  :key="stat.label"
                 >
-                  <div>
-                    <div class="font-display font-extrabold text-leaf-600 dark:text-leaf-400
-                                text-[1.35rem] leading-none mb-1 tabular-nums">
-                      15<span class="text-[0.7rem] ml-0.5">yrs</span>
-                    </div>
-                    <div class="text-[rgb(var(--text-muted))] text-[0.68rem]
-                                uppercase tracking-wider font-bold">
-                      Refined
-                    </div>
+                  <div class="flex items-baseline gap-3 mb-1.5">
+                    <span
+                      class="font-display font-extrabold text-white
+                             text-[clamp(1.65rem,3vw,2.15rem)] leading-none
+                             tracking-[-0.03em] tabular-nums"
+                    >
+                      {{ stat.value }}
+                    </span>
+                    <span
+                      class="text-harvest-400 font-display font-bold
+                             text-[1rem] leading-none"
+                    >
+                      {{ stat.suffix }}
+                    </span>
                   </div>
-                  <div>
-                    <div class="font-display font-extrabold text-leaf-600 dark:text-leaf-400
-                                text-[1.35rem] leading-none mb-1 tabular-nums">
-                      6
-                    </div>
-                    <div class="text-[rgb(var(--text-muted))] text-[0.68rem]
-                                uppercase tracking-wider font-bold">
-                      Estates
-                    </div>
+                  <div class="text-white/75 text-[0.88rem] font-medium leading-snug">
+                    {{ stat.label }}
                   </div>
-                  <div>
-                    <div class="font-display font-extrabold text-leaf-600 dark:text-leaf-400
-                                text-[1.35rem] leading-none mb-1 tabular-nums">
-                      1,200<span class="text-[0.7rem] ml-0.5">ha</span>
-                    </div>
-                    <div class="text-[rgb(var(--text-muted))] text-[0.68rem]
-                                uppercase tracking-wider font-bold">
-                      Under management
-                    </div>
-                  </div>
+                  <div
+                    v-if="i < liveStats.length - 1"
+                    class="mt-5 h-px bg-white/10"
+                  />
+                </div>
+              </div>
+  
+              <!-- Footer: active crops mini row -->
+              <div
+                class="relative z-10 mt-7 pt-6 border-t border-white/10"
+              >
+                <div class="text-white/55 text-[0.68rem]
+                            uppercase tracking-wider font-bold mb-3">
+                  In Season Right Now
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    v-for="crop in inSeasonCrops"
+                    :key="crop"
+                    class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md
+                           bg-white/10 backdrop-blur-md border border-white/15
+                           text-white/90 text-[0.78rem] font-medium"
+                  >
+                    <span class="w-1.5 h-1.5 rounded-full bg-leaf-400 animate-pulse" />
+                    {{ crop }}
+                  </span>
                 </div>
               </div>
             </div>
   
-            <!-- Floating badge -->
+            <!-- Floating card (top-right of status card) -->
             <div
               ref="badgeRef"
               class="hidden lg:flex absolute -top-4 -right-4
@@ -320,7 +280,7 @@
                      shadow-[0_12px_30px_-10px_rgba(0,0,0,0.2)]"
             >
               <span class="grid place-items-center w-7 h-7 rounded-full
-                           bg-leaf-500 text-white">
+                           bg-harvest-500 text-white">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
                      stroke="currentColor" stroke-width="3"
                      stroke-linecap="round" stroke-linejoin="round">
@@ -328,16 +288,16 @@
                 </svg>
               </span>
               <div class="text-[0.82rem] font-semibold text-[rgb(var(--text))]">
-                ISO 14001 aligned
+                Updated weekly
               </div>
             </div>
   
-            <!-- Rotating ring -->
+            <!-- Corner accent (rotating dashed ring) -->
             <div
               ref="ringRef"
               class="hidden lg:block absolute -bottom-6 -left-6
                      w-24 h-24 rounded-full
-                     border-2 border-dashed border-leaf-500/30
+                     border-2 border-dashed border-harvest-500/30
                      pointer-events-none"
               aria-hidden="true"
             />
@@ -352,7 +312,7 @@
                  uppercase tracking-[0.25em] font-semibold"
         >
           <span class="h-px w-12 bg-[rgb(var(--border)/0.3)]" />
-          <span>Explore each stage in detail</span>
+          <span>Explore the full calendar</span>
           <span class="h-px w-12 bg-[rgb(var(--border)/0.3)]" />
         </div>
   
@@ -368,76 +328,57 @@
   
   /* -------- Icons -------- */
   const icons = {
-    clock: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
-    check: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>`,
-    refresh: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>`,
+    calendar: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>`,
+    globe: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+    refresh: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>`,
   }
   
   /* -------- Trust items -------- */
   const trustItems = [
     {
-      title: 'Documented',
-      subtitle: 'Every step has a written SOP',
-      icon: icons.check,
-    },
-    {
-      title: 'Audited',
-      subtitle: 'ISO 14001 + Rainforest Alliance',
+      title: 'Updated weekly',
+      subtitle: 'Real harvest data, not estimates',
       icon: icons.refresh,
     },
     {
-      title: 'Reproducible',
-      subtitle: 'Same model across all 6 estates',
-      icon: icons.clock,
+      title: 'Multi-year view',
+      subtitle: 'See what\'s coming through 2030',
+      icon: icons.calendar,
+    },
+    {
+      title: 'All estates',
+      subtitle: 'Palm, cocoa, plantain, rubber & more',
+      icon: icons.globe,
     },
   ]
   
-  /* -------- Process steps (compact for hero) -------- */
-  const steps = [
-    {
-      number: '01',
-      title: 'Land Selection & Soil Analysis',
-      short: 'Independent soil testing, topography survey, community engagement.',
-      duration: '2–4 mo',
-    },
-    {
-      number: '02',
-      title: 'Planting & Nursery',
-      short: 'Certified seedlings raised in-house, planted to spacing standards.',
-      duration: '6–12 mo',
-    },
-    {
-      number: '03',
-      title: 'Growth & Nurturing',
-      short: 'Disciplined tending, organic inputs, monthly field audits.',
-      duration: '3–5 yrs',
-    },
-    {
-      number: '04',
-      title: 'Harvest & Processing',
-      short: 'Hand-picked at ripeness, graded on-site, batch documented.',
-      duration: 'Seasonal',
-    },
-    {
-      number: '05',
-      title: 'Delivery & Traceability',
-      short: 'QR-coded, documented, delivered with full origin transparency.',
-      duration: 'Days',
-    },
+  /* -------- Current date -------- */
+  const now = new Date()
+  const currentMonth = now.toLocaleString('en-US', { month: 'long' })
+  const currentYear  = now.getFullYear()
+  
+  /* -------- Live stats (static for now — will be computed from harvest data later) -------- */
+  const liveStats = [
+    { value: 4, suffix: ' crops', label: 'Currently being harvested across our estates' },
+    { value: 3, suffix: ' estates', label: 'In active production this month' },
+    { value: 12, suffix: '+', label: 'Harvest windows scheduled through 2030' },
   ]
+  
+  /* -------- Crops currently in season -------- */
+  const inSeasonCrops = ['Palm Oil', 'Palm Kernel', 'Vegetables', 'Maize']
   
   /* -------- Refs -------- */
-  const sectionRef    = ref<HTMLElement | null>(null)
-  const breadcrumbRef = ref<HTMLElement | null>(null)
-  const eyebrowRef    = ref<HTMLElement | null>(null)
-  const headlineRef   = ref<HTMLElement | null>(null)
-  const leadRef       = ref<HTMLElement | null>(null)
-  const ctaRef        = ref<HTMLElement | null>(null)
-  const trustRef      = ref<HTMLElement | null>(null)
-  const flowCardRef   = ref<HTMLElement | null>(null)
-  const badgeRef      = ref<HTMLElement | null>(null)
-  const ringRef       = ref<HTMLElement | null>(null)
-  const scrollCueRef  = ref<HTMLElement | null>(null)
+  const sectionRef     = ref<HTMLElement | null>(null)
+  const breadcrumbRef  = ref<HTMLElement | null>(null)
+  const eyebrowRef     = ref<HTMLElement | null>(null)
+  const headlineRef    = ref<HTMLElement | null>(null)
+  const leadRef        = ref<HTMLElement | null>(null)
+  const ctaRef         = ref<HTMLElement | null>(null)
+  const trustRef       = ref<HTMLElement | null>(null)
+  const statusCardRef  = ref<HTMLElement | null>(null)
+  const badgeRef       = ref<HTMLElement | null>(null)
+  const ringRef        = ref<HTMLElement | null>(null)
+  const scrollCueRef   = ref<HTMLElement | null>(null)
   
   /* ---------------------------------------------------------------
      ENTRANCE
@@ -452,7 +393,7 @@
     if (prefersReduced) {
       gsap.set(
         [breadcrumbRef.value, eyebrowRef.value, headlineRef.value, leadRef.value,
-         ctaRef.value, trustRef.value, flowCardRef.value, badgeRef.value,
+         ctaRef.value, trustRef.value, statusCardRef.value, badgeRef.value,
          scrollCueRef.value].filter(Boolean),
         { autoAlpha: 1, y: 0, x: 0, scale: 1 }
       )
@@ -486,17 +427,17 @@
           y: 20, autoAlpha: 0, duration: 0.5, stagger: 0.1,
         }, '-=0.4')
   
-      /* --- Flow card --- */
-      gsap.from(flowCardRef.value, {
+      /* --- Status card --- */
+      gsap.from(statusCardRef.value, {
         x: 60, autoAlpha: 0, duration: 1, ease: 'power3.out',
         delay: 0.4,
       })
   
-      /* --- Steps cascade --- */
-      if (flowCardRef.value) {
-        const stepEls = flowCardRef.value.querySelectorAll('.flow-step')
-        gsap.from(stepEls, {
-          x: 20, autoAlpha: 0, duration: 0.5, stagger: 0.1, ease: 'power2.out',
+      /* --- Live stats stagger in --- */
+      if (statusCardRef.value) {
+        const statEls = statusCardRef.value.querySelectorAll('.space-y-5 > div')
+        gsap.from(statEls, {
+          y: 20, autoAlpha: 0, duration: 0.6, stagger: 0.12, ease: 'power3.out',
           delay: 0.9,
         })
       }
@@ -524,9 +465,3 @@
   
   onBeforeUnmount(() => ctx?.revert())
   </script>
-  
-  <style scoped>
-  .flow-step {
-    will-change: transform;
-  }
-  </style>

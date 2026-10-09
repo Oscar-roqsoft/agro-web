@@ -152,7 +152,7 @@
               </li>
               <li>
                 <a
-                  href="mailto:hello@greenfieldagri.com"
+                  href="mailto:hello@Chrismekagri.com"
                   class="inline-flex items-start gap-2.5
                          text-[rgb(var(--text-muted))] text-[0.88rem]
                          hover:text-leaf-600 dark:hover:text-leaf-400
@@ -344,9 +344,9 @@
   ]
   
   const legalLinks = [
-    { label: 'Privacy Policy', href: '/legal/privacy' },
-    { label: 'Terms of Service', href: '/legal/terms' },
-    { label: 'Cookie Policy', href: '/legal/cookies' },
+    // { label: 'Privacy Policy', href: '/legal/privacy' },
+    // { label: 'Terms of Service', href: '/legal/terms' },
+    // { label: 'Cookie Policy', href: '/legal/cookies' },
   ]
   
   /* -------- State -------- */

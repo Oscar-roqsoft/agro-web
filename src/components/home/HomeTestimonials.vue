@@ -253,7 +253,7 @@
   const testimonials: Testimonial[] = [
     {
       quote:
-        'After 3 years of working with GreenField, our cocoa supply has become the most reliable on our roster. Traceability is impeccable — every bag has a story.',
+        'After 3 years of working with Chrismek, our cocoa supply has become the most reliable on our roster. Traceability is impeccable — every bag has a story.',
       name: 'Amara Okonkwo',
       role: 'Head of Procurement, Westcocoa Ltd.',
       avatar: '/images/avatar-1.jpg',

@@ -8,7 +8,7 @@
   
   <script setup lang="ts">
   useHead({
-    title: 'Our Plantations — GreenField Agri Estates',
+    title: 'Our Plantations — Chrismek Agri Estates',
     meta: [
       {
         name: 'description',

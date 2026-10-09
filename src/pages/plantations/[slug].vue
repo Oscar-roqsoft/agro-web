@@ -25,7 +25,7 @@
   }
   
   useHead(() => ({
-    title: `${estate.value!.name} — GreenField Agri Estates`,
+    title: `${estate.value!.name} — Chrismek Agri Estates`,
     meta: [
       {
         name: 'description',

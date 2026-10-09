@@ -279,7 +279,7 @@
           <div class="relative z-10 max-w-xl">
             <div class="text-harvest-300 text-[0.75rem] font-bold
                         uppercase tracking-[0.2em] mb-3">
-              Careers at GreenField
+              Careers at Chrismek
             </div>
             <h3
               class="font-display font-extrabold text-white

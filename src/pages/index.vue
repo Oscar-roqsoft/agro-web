@@ -5,7 +5,7 @@
       <HomeHarvestTimeline />
       <HomeSustainability />
       <HomeProcess />
-      <HomeInvestment />
+      <!-- <HomeInvestment /> -->
       <HomeTestimonials />
       <HomeFaq />
     </div>
