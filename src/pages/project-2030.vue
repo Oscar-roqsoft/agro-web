@@ -407,7 +407,7 @@
                   </svg>
                 </NuxtLink>
   
-                <NuxtLink to="/estates" class="p2030-btn p2030-btn--secondary">
+                <NuxtLink to="/plantations" class="p2030-btn p2030-btn--secondary">
                   Explore Our Estates
                 </NuxtLink>
               </div>
