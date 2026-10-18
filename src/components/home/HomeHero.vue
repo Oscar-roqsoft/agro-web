@@ -259,56 +259,7 @@
 
 
         <!-- ============ CHRISMek TECHNOLOGY CREDIT (added) ============ -->
-        <div
-      ref="creditRef"
-      class="absolute top-[450px] md:top-24 lg:top-28 left-6 lg:right-8 z-20
-             md:flex flex-col items-end gap-1
-             pointer-events-none select-none"
-    >
-      <div
-        class="inline-flex items-center gap-2.5
-               pl-3 pr-3.5 py-2 rounded-full
-               bg-black/30 backdrop-blur-md
-               border border-white/15
-               shadow-[0_8px_24px_-8px_rgba(0,0,0,0.4)]"
-      >
-        <!-- Spark icon -->
-        <span
-          class="grid place-items-center w-5 h-5 rounded-full
-                 bg-gradient-to-br from-harvest-400 to-harvest-600
-                 text-white shrink-0"
-          aria-hidden="true"
-        >
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2l2.09 6.26L20 10l-5.91 1.74L12 18l-2.09-6.26L4 10l5.91-1.74L12 2z"/>
-          </svg>
-        </span>
-
-        <!-- Text -->
-        <!-- <div class="flex flex-col leading-tight">
-          <span class="text-white/50 text-[0.58rem] uppercase tracking-[0.2em] font-bold">
-            Crafted by
-          </span>
-          <span class="text-white font-display font-bold text-[0.82rem] tracking-tight">
-            Chrismek Technology
-          </span>
-        </div> -->
-
-        <!-- External link icon -->
-        <span
-          class="grid place-items-center w-5 h-5 rounded-full
-                 bg-white/10 border border-white/15
-                 text-white/70 shrink-0 ml-1"
-          aria-hidden="true"
-        >
-          <svg width="9" height="9" viewBox="0 0 24 24" fill="none"
-               stroke="currentColor" stroke-width="2.4"
-               stroke-linecap="round" stroke-linejoin="round">
-            <path d="M7 17 17 7M7 7h10v10"/>
-          </svg>
-        </span>
-      </div>
-    </div>
+    
 
     <!-- ============ SCROLL INDICATOR ============ -->
     <div
