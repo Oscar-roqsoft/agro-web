@@ -269,7 +269,7 @@
                     <div class="p2030-journey-block__flag">🇦🇺</div>
                     <div class="p2030-journey-block__meta">
                       <div class="p2030-journey-block__title">Australia → Nigeria</div>
-                      <div class="p2030-journey-block__sub">Sponsored training · 2025 → 2030</div>
+                      <div class="p2030-journey-block__sub">Sponsored training · 2026 → 2030</div>
                     </div>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                          stroke="currentColor" stroke-width="2"
@@ -512,7 +512,7 @@
   ]
   
   const teamJourney = [
-    { year: '2025', title: 'Team departs',      desc: 'Selected team begins sponsored program in Australia.' },
+    { year: '2026', title: 'Team departs',      desc: 'Selected team begins sponsored program in Australia.' },
     { year: '2027', title: 'Mid-program review', desc: 'Skills assessment and integration planning.' },
     { year: '2030', title: 'Team returns',       desc: 'Ready to lead the next phase of Chrismek Technology.' },
   ]

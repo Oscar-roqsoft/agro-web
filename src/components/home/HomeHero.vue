@@ -101,7 +101,7 @@
                 <!-- Year -->
                 <div class="shrink-0 flex flex-col leading-none">
                   <span class="text-[0.55rem] font-bold uppercase tracking-[0.18em] text-harvest-300 mb-1">
-                    Project
+                    Project <br>2030
                   </span>
                   <span
                     ref="yearRefMobile"
