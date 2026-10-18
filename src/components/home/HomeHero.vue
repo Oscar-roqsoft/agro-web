@@ -28,10 +28,8 @@
         :class="{ '!opacity-100': videoLoaded }"
         style="transition: opacity 1000ms ease;"
       >
-
         <source src="" type="video/webm" />
         <source src="" type="video/mp4" />
-        
       </video>
 
       <!-- Overlays — light mode -->
@@ -54,7 +52,7 @@
       />
     </div>
 
-    <!-- ============ AMBIENT GLOW ORBS (added) ============ -->
+    <!-- ============ AMBIENT GLOW ORBS ============ -->
     <div
       ref="orb1Ref"
       class="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full
@@ -71,12 +69,106 @@
     <!-- ============ MAIN CONTENT AREA ============ -->
     <div
       class="container-page relative z-10 flex-1 flex flex-col justify-center
-              pt-10  pb-8 lg:pb-10"
+              pt-10 pb-8 lg:pb-10"
     >
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end w-full">
 
         <!-- LEFT COLUMN -->
-        <div class="lg:col-span-7 ">
+        <div class="lg:col-span-7">
+
+          <!-- ============ PROJECT 2030 ADVERT — MOBILE STRIP (below lg) ============ -->
+          <div
+            ref="advertRefMobile"
+            class="project-2030 project-2030--strip lg:hidden mb-6
+                   relative w-full rounded-2xl p-[1.5px] overflow-hidden
+                   will-change-transform"
+          >
+            <div class="project-2030-ring absolute inset-[-50%] -z-10" aria-hidden="true" />
+
+            <div
+              class="relative rounded-2xl
+                     bg-[rgba(10,20,12,0.82)] backdrop-blur-xl
+                     border border-white/15
+                     px-4 py-3.5 overflow-hidden
+                     shadow-[0_16px_48px_-16px_rgba(0,0,0,0.7)]"
+            >
+              <div class="absolute -top-12 -right-12 w-32 h-32 rounded-full
+                          bg-harvest-500/25 blur-3xl pointer-events-none" aria-hidden="true" />
+              <div class="absolute -bottom-12 -left-12 w-32 h-32 rounded-full
+                          bg-leaf-500/25 blur-3xl pointer-events-none" aria-hidden="true" />
+
+              <div class="relative flex items-center gap-3">
+                <!-- Year -->
+                <div class="shrink-0 flex flex-col leading-none">
+                  <span class="text-[0.55rem] font-bold uppercase tracking-[0.18em] text-harvest-300 mb-1">
+                    Project
+                  </span>
+                  <span
+                    ref="yearRefMobile"
+                    class="font-display font-black leading-none tracking-[-0.05em]
+                           text-[1.9rem]
+                           bg-gradient-to-br from-harvest-300 via-harvest-400 to-leaf-400
+                           bg-clip-text text-transparent"
+                    aria-label="2030"
+                  >
+                    <span class="year-digit inline-block">2</span><span class="year-digit inline-block">0</span><span class="year-digit inline-block">3</span><span class="year-digit inline-block">0</span>
+                  </span>
+                </div>
+
+                <!-- Divider -->
+                <div class="w-px h-9 bg-white/15 shrink-0" aria-hidden="true" />
+
+                <!-- Copy -->
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-1.5 mb-1">
+                    <span class="relative flex h-1.5 w-1.5">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-harvest-400 opacity-80" />
+                      <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-harvest-400" />
+                    </span>
+                    <span class="text-harvest-300 text-[0.58rem] font-bold uppercase tracking-[0.16em]">
+                      Flagship Initiative
+                    </span>
+                  </div>
+                  <p class="text-white/85 text-[0.72rem] leading-snug">
+                    Seven estates. Four states. Peak yield by 2030.
+                  </p>
+                </div>
+
+                <!-- Arrow -->
+                <NuxtLink
+                  to="/project-2030"
+                  class="shrink-0 grid place-items-center w-8 h-8 rounded-full
+                         bg-white text-[rgb(15,30,18)]
+                         hover:bg-harvest-300 transition-colors duration-300"
+                  aria-label="Explore Project 2030"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2.6"
+                       stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </NuxtLink>
+              </div>
+
+              <!-- Progress bar -->
+              <div class="relative mt-3">
+                <div class="flex items-center justify-between text-[0.55rem] uppercase tracking-widest
+                            text-white/55 font-semibold mb-1">
+                  <span>Progress to goal</span>
+                  <span class="text-harvest-300" ref="progressLabelRefMobile">0%</span>
+                </div>
+                <div class="h-1 w-full rounded-full bg-white/10 overflow-hidden">
+                  <div
+                    ref="progressBarRefMobile"
+                    class="h-full rounded-full
+                           bg-gradient-to-r from-harvest-400 to-leaf-400
+                           shadow-[0_0_10px_rgba(249,168,37,0.6)]"
+                    style="width: 0%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!-- Eyebrow badge -->
           <div
@@ -135,25 +227,6 @@
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
             </NuxtLink>
-
-            <!-- <NuxtLink
-              to="/about"
-              class="btn !px-6 !py-3.5 !text-[0.95rem]
-                     bg-white/10 backdrop-blur-md
-                     border border-white/25 text-white
-                     hover:bg-white/20 hover:border-white/40
-                     group/play will-change-transform"
-            >
-              <span
-                class="grid place-items-center w-6 h-6 rounded-full bg-white/20
-                       transition-transform duration-300 group-hover/play:scale-110"
-              >
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </span>
-              Watch Our Story
-            </NuxtLink> -->
           </div>
 
           <!-- Stats row -->
@@ -184,11 +257,122 @@
           </div>
         </div>
 
-        <!-- RIGHT COLUMN: Harvest Calendar -->
+        <!-- RIGHT COLUMN: Project 2030 Advert + Harvest Calendar (desktop only) -->
         <div
           ref="harvestRef"
-          class="hidden lg:flex lg:col-span-5 flex-col gap-3 items-end self-end pb-2"
+          class="hidden lg:flex lg:col-span-5 flex-col gap-4 items-end self-end pb-2"
         >
+
+          <!-- ============ PROJECT 2030 ADVERT CARD — DESKTOP ============ -->
+          <div
+            ref="advertRef"
+            class="project-2030 relative w-full max-w-[380px] rounded-2xl
+                   p-[1.5px] overflow-hidden
+                   will-change-transform"
+          >
+            <div class="project-2030-ring absolute inset-[-50%] -z-10" aria-hidden="true" />
+
+            <div
+              class="relative rounded-2xl
+                     bg-[rgba(10,20,12,0.82)] backdrop-blur-xl
+                     border border-white/15
+                     px-5 py-5 overflow-hidden
+                     shadow-[0_20px_60px_-20px_rgba(0,0,0,0.7)]"
+            >
+              <div class="absolute -top-16 -right-16 w-40 h-40 rounded-full
+                          bg-harvest-500/25 blur-3xl pointer-events-none" aria-hidden="true" />
+              <div class="absolute -bottom-16 -left-16 w-40 h-40 rounded-full
+                          bg-leaf-500/25 blur-3xl pointer-events-none" aria-hidden="true" />
+
+              <!-- Header row -->
+              <div class="relative flex items-center justify-between mb-3">
+                <div class="inline-flex items-center gap-2
+                            px-2.5 py-1 rounded-full
+                            bg-harvest-500/15 border border-harvest-400/40">
+                  <span class="relative flex h-1.5 w-1.5">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-harvest-400 opacity-80" />
+                    <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-harvest-400" />
+                  </span>
+                  <span class="text-harvest-300 text-[0.65rem] font-semibold uppercase tracking-[0.18em]">
+                    Flagship Initiative
+                  </span>
+                </div>
+
+                <span class="text-white/40 text-[0.7rem] uppercase tracking-widest font-semibold">
+                  Est. 2025
+                </span>
+              </div>
+
+              <!-- Big 2030 numeral -->
+              <div class="relative flex items-end gap-3 mb-3">
+                <div
+                  ref="yearRef"
+                  class="font-display font-black leading-none tracking-[-0.05em]
+                         text-[clamp(2.4rem,4.4vw,3.4rem)]
+                         bg-gradient-to-br from-harvest-300 via-harvest-400 to-leaf-400
+                         bg-clip-text text-transparent
+                         drop-shadow-[0_2px_20px_rgba(249,168,37,0.35)]"
+                  aria-label="Project 2030"
+                >
+                  <span class="year-digit inline-block">2</span><span class="year-digit inline-block">0</span><span class="year-digit inline-block">3</span><span class="year-digit inline-block">0</span>
+                </div>
+                <div class="pb-2">
+                  <div class="text-white text-[0.82rem] font-bold uppercase tracking-[0.14em]">
+                    Project 2030
+                  </div>
+                  <div class="text-white/55 text-[0.68rem] tracking-wide">
+                    Full network maturity
+                  </div>
+                </div>
+              </div>
+
+              <!-- One-line pitch -->
+              <p class="relative text-white/80 text-[0.82rem] leading-snug mb-4">
+                Seven estates, four states, one integrated agribusiness — at peak yield by 2030.
+              </p>
+
+              <!-- Mini progress bar -->
+              <div class="relative mb-4">
+                <div class="flex items-center justify-between text-[0.65rem] uppercase tracking-widest
+                            text-white/55 font-semibold mb-1.5">
+                  <span>Progress to goal</span>
+                  <span class="text-harvest-300" ref="progressLabelRef">0%</span>
+                </div>
+                <div class="h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+                  <div
+                    ref="progressBarRef"
+                    class="h-full rounded-full
+                           bg-gradient-to-r from-harvest-400 to-leaf-400
+                           shadow-[0_0_12px_rgba(249,168,37,0.6)]"
+                    style="width: 0%"
+                  />
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <NuxtLink
+                to="/project-2030"
+                class="relative inline-flex items-center gap-2
+                       px-4 py-2 rounded-full
+                       bg-white text-[rgb(15,30,18)]
+                       text-[0.78rem] font-bold
+                       hover:bg-harvest-300
+                       transition-all duration-300
+                       group/cta2030
+                       shadow-[0_4px_20px_-4px_rgba(249,168,37,0.5)]"
+              >
+                Explore the roadmap
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2.6"
+                     stroke-linecap="round" stroke-linejoin="round"
+                     class="transition-transform duration-300 group-hover/cta2030:translate-x-1">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </NuxtLink>
+            </div>
+          </div>
+
+          <!-- Harvest label + items -->
           <div
             ref="harvestLabelRef"
             class="text-white/55 text-[0.72rem] uppercase tracking-[0.2em] font-semibold pr-1"
@@ -257,10 +441,6 @@
       </div>
     </div>
 
-
-        <!-- ============ CHRISMek TECHNOLOGY CREDIT (added) ============ -->
-    
-
     <!-- ============ SCROLL INDICATOR ============ -->
     <div
       ref="scrollRef"
@@ -282,26 +462,37 @@ import { SplitText } from 'gsap/SplitText'
 gsap.registerPlugin(SplitText)
 
 /* -------- Refs -------- */
-const heroRef         = ref<HTMLElement | null>(null)
-const bgWrapRef       = ref<HTMLElement | null>(null)
-const posterRef       = ref<HTMLImageElement | null>(null)
-const videoRef        = ref<HTMLVideoElement | null>(null)
-const grainRef        = ref<HTMLElement | null>(null)
-const orb1Ref         = ref<HTMLElement | null>(null)
-const orb2Ref         = ref<HTMLElement | null>(null)
-const badgeRef        = ref<HTMLElement | null>(null)
-const headlineRef     = ref<HTMLElement | null>(null)
-const subRef          = ref<HTMLElement | null>(null)
-const ctaRef          = ref<HTMLElement | null>(null)
-const statsRef        = ref<HTMLElement | null>(null)
-const harvestRef      = ref<HTMLElement | null>(null)
-const harvestLabelRef = ref<HTMLElement | null>(null)
-const scrollRef       = ref<HTMLElement | null>(null)
-const marqueeRef      = ref<HTMLElement | null>(null)
+const heroRef                = ref<HTMLElement | null>(null)
+const bgWrapRef              = ref<HTMLElement | null>(null)
+const posterRef              = ref<HTMLImageElement | null>(null)
+const videoRef               = ref<HTMLVideoElement | null>(null)
+const grainRef               = ref<HTMLElement | null>(null)
+const orb1Ref                = ref<HTMLElement | null>(null)
+const orb2Ref                = ref<HTMLElement | null>(null)
+const badgeRef               = ref<HTMLElement | null>(null)
+const headlineRef            = ref<HTMLElement | null>(null)
+const subRef                 = ref<HTMLElement | null>(null)
+const ctaRef                 = ref<HTMLElement | null>(null)
+const statsRef               = ref<HTMLElement | null>(null)
+const harvestRef             = ref<HTMLElement | null>(null)
+const harvestLabelRef        = ref<HTMLElement | null>(null)
+const scrollRef              = ref<HTMLElement | null>(null)
+const marqueeRef             = ref<HTMLElement | null>(null)
+
+/* Advert — desktop */
+const advertRef              = ref<HTMLElement | null>(null)
+const yearRef                = ref<HTMLElement | null>(null)
+const progressBarRef         = ref<HTMLElement | null>(null)
+const progressLabelRef       = ref<HTMLElement | null>(null)
+
+/* Advert — mobile strip */
+const advertRefMobile        = ref<HTMLElement | null>(null)
+const yearRefMobile          = ref<HTMLElement | null>(null)
+const progressBarRefMobile   = ref<HTMLElement | null>(null)
+const progressLabelRefMobile = ref<HTMLElement | null>(null)
 
 /* Harvest items (plain array — non-reactive, single-use) */
 const harvestItemRefs: HTMLElement[] = []
-const creditRef  = ref<HTMLElement | null>(null)
 
 const videoLoaded = ref(false)
 
@@ -316,9 +507,9 @@ const icons = {
 /* -------- Data -------- */
 const stats = [
   { label: 'Hectares Cultivated', value: 1200, suffix: '+', icon: icons.leaf },
-  { label: 'Partner Farmers',     value: 34,  suffix: '+', icon: icons.users },
+  { label: 'Partner Farmers',     value: 34,   suffix: '+', icon: icons.users },
   { label: 'Estates Nationwide',  value: 6,    suffix: '',  icon: icons.map },
-  { label: 'Years of Experience', value: 8,   suffix: '+', icon: icons.award },
+  { label: 'Years of Experience', value: 8,    suffix: '+', icon: icons.award },
 ]
 
 const harvests = [
@@ -328,12 +519,12 @@ const harvests = [
 ]
 
 const marqueeImages = [
-  { src: '/images/farm1.jpg', alt: 'Palm plantation aerial',       title: 'Palm Estate',    location: 'Cross River' },
-  { src: '/images/farm5.jpg', alt: 'Harvesting palm fruit',         title: 'Fresh Harvest',  location: 'Edo State' },
-  { src: '/images/farm3.jpg', alt: 'Cocoa pods drying',             title: 'Cocoa Pods',     location: 'Ondo' },
-  { src: '/images/farm6.jpg', alt: 'Plantain plantation',           title: 'Plantain Farm',  location: 'Ogun' },
-  { src: '/images/farm2.jpg', alt: 'Farmers working in field',      title: 'Partner Farmers', location: 'Akwa Ibom' },
-  { src: '/images/farm4.jpg', alt: 'Golden hour over plantation',   title: 'Golden Hour',    location: 'Delta' },
+  { src: '/images/farm1.jpg', alt: 'Palm plantation aerial',      title: 'Palm Estate',     location: 'Cross River' },
+  { src: '/images/farm5.jpg', alt: 'Harvesting palm fruit',       title: 'Fresh Harvest',   location: 'Edo State' },
+  { src: '/images/farm3.jpg', alt: 'Cocoa pods drying',           title: 'Cocoa Pods',      location: 'Ondo' },
+  { src: '/images/farm6.jpg', alt: 'Plantain plantation',         title: 'Plantain Farm',   location: 'Ogun' },
+  { src: '/images/farm2.jpg', alt: 'Farmers working in field',    title: 'Partner Farmers', location: 'Akwa Ibom' },
+  { src: '/images/farm4.jpg', alt: 'Golden hour over plantation', title: 'Golden Hour',     location: 'Delta' },
 ]
 
 /* ---------------------------------------------------------------
@@ -430,14 +621,10 @@ const startMarquee = () => {
   })
 }
 
-const pauseMarquee  = () => marqueeTween?.pause()
-const resumeMarquee = () => marqueeTween?.resume()
-
 /* ---------------------------------------------------------------
    MAIN ENTRANCE + CONTINUOUS ANIMATIONS
    --------------------------------------------------------------- */
 let ctx: gsap.Context | null = null
-
 
 onMounted(async () => {
   await nextTick()
@@ -465,8 +652,8 @@ onMounted(async () => {
   if (prefersReduced) {
     gsap.set(
       [badgeRef.value, subRef.value, ctaRef.value, statsRef.value,
-       harvestRef.value, scrollRef.value].filter(Boolean),
-      { autoAlpha: 1, y: 0, x: 0 }
+       harvestRef.value, scrollRef.value, advertRef.value, advertRefMobile.value].filter(Boolean),
+      { autoAlpha: 1, y: 0, x: 0, scale: 1 }
     )
     runCounters()
     return
@@ -504,12 +691,31 @@ onMounted(async () => {
     /* ============ MAIN CONTENT TIMELINE ============ */
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' }, delay: 0.15 })
 
+    /* Advert entrance — mobile strip first (if visible) */
+    tl.from(advertRefMobile.value, {
+      y: 30,
+      autoAlpha: 0,
+      scale: 0.94,
+      duration: 0.8,
+      ease: 'back.out(1.5)',
+    })
+
+    .from(yearRefMobile.value?.querySelectorAll('.year-digit') ?? [], {
+      y: 20,
+      autoAlpha: 0,
+      rotateX: -90,
+      transformOrigin: '50% 100% -20px',
+      duration: 0.6,
+      stagger: 0.07,
+      ease: 'back.out(2.2)',
+    }, '-=0.5')
+
     tl
       /* Badge — pop from below with slight scale */
       .from(badgeRef.value, {
         y: 30, autoAlpha: 0, scale: 0.94,
         duration: 0.7, ease: 'back.out(1.4)',
-      })
+      }, '-=0.3')
 
       /* Headline — cinematic word cascade with 3D tilt */
       .from(split?.words ?? [], {
@@ -557,13 +763,34 @@ onMounted(async () => {
         ease: 'back.out(2.4)',
       }, '-=0.55')
 
+      /* ============ PROJECT 2030 ADVERT — desktop entrance ============ */
+      .from(advertRef.value, {
+        y: 40,
+        autoAlpha: 0,
+        scale: 0.92,
+        rotateX: -8,
+        transformOrigin: '50% 100%',
+        duration: 0.9,
+        ease: 'back.out(1.5)',
+      }, '-=0.55')
+
+      .from(yearRef.value?.querySelectorAll('.year-digit') ?? [], {
+        y: 30,
+        autoAlpha: 0,
+        rotateX: -90,
+        transformOrigin: '50% 100% -20px',
+        duration: 0.7,
+        stagger: 0.09,
+        ease: 'back.out(2.2)',
+      }, '-=0.55')
+
       /* Harvest label */
       .from(harvestLabelRef.value, {
         x: 20, autoAlpha: 0,
         duration: 0.5,
-      }, '-=0.5')
+      }, '-=0.4')
 
-      /* Harvest pills — slide from right with scale */
+      /* Harvest pills */
       .from(harvestItemRefs.filter(Boolean), {
         x: 40, autoAlpha: 0, scale: 0.9,
         duration: 0.6,
@@ -575,15 +802,6 @@ onMounted(async () => {
       .from(scrollRef.value, {
         y: 16, autoAlpha: 0,
         duration: 0.5,
-      }, '-=0.3')
-
-            /* Chrismek Technology credit — slide up from bottom-right */
-            .from(creditRef.value, {
-        y: 20,
-        x: 20,
-        autoAlpha: 0,
-        duration: 0.7,
-        ease: 'back.out(1.4)',
       }, '-=0.3')
 
       /* Counters */
@@ -627,18 +845,6 @@ onMounted(async () => {
       }
     }
 
-        /* Chrismek credit — subtle floating loop */
-        if (creditRef.value) {
-      gsap.to(creditRef.value, {
-        y: -4,
-        duration: 3,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut',
-        delay: 2.5,
-      })
-    }
-
     /* Orb ambient breathing */
     if (orb1Ref.value) {
       gsap.to(orb1Ref.value, {
@@ -680,6 +886,58 @@ onMounted(async () => {
         ease: 'sine.inOut',
       })
     }
+
+    /* ============ PROJECT 2030 ADVERT — continuous (both layouts) ============ */
+    const rings = [
+      advertRef.value?.querySelector('.project-2030-ring'),
+      advertRefMobile.value?.querySelector('.project-2030-ring'),
+    ].filter(Boolean) as HTMLElement[]
+
+    rings.forEach((ring) => {
+      gsap.to(ring, {
+        rotate: 360,
+        duration: 8,
+        repeat: -1,
+        ease: 'none',
+      })
+    })
+
+    const adverts = [advertRef.value, advertRefMobile.value].filter(Boolean) as HTMLElement[]
+    adverts.forEach((card) => {
+      gsap.to(card, {
+        filter: 'drop-shadow(0 0 24px rgba(249,168,37,0.35))',
+        duration: 2.4,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut',
+        delay: 1.2,
+      })
+    })
+
+    /* Progress bars — both layouts */
+    const targetPct = 42   // ← adjust to real progress
+
+    const animateProgress = (
+      barEl: HTMLElement | null,
+      labelEl: HTMLElement | null,
+    ) => {
+      if (!barEl && !labelEl) return
+      const prog = { v: 0 }
+
+      gsap.to(prog, {
+        v: targetPct,
+        duration: 2,
+        ease: 'power2.out',
+        delay: 1.4,
+        onUpdate: () => {
+          if (barEl)   barEl.style.width = `${prog.v}%`
+          if (labelEl) labelEl.textContent = `${Math.round(prog.v)}%`
+        },
+      })
+    }
+
+    animateProgress(progressBarRef.value,       progressLabelRef.value)
+    animateProgress(progressBarRefMobile.value, progressLabelRefMobile.value)
 
   }, heroRef.value!)
 })
@@ -744,5 +1002,49 @@ const runCounters = () => {
 .marquee-card:hover {
   border-color: rgba(255, 255, 255, 0.35);
   box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* ============ PROJECT 2030 ADVERT ============ */
+
+/* Rotating conic-gradient border */
+.project-2030-ring {
+  background: conic-gradient(
+    from 0deg,
+    rgba(249, 168, 37, 0.0)   0deg,
+    rgba(249, 168, 37, 0.95) 90deg,
+    rgba(132, 204, 22, 0.95) 180deg,
+    rgba(249, 168, 37, 0.0)  270deg,
+    rgba(249, 168, 37, 0.0)  360deg
+  );
+  border-radius: 1rem;
+  will-change: transform;
+  filter: blur(10px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.project-2030:hover .project-2030-ring {
+  opacity: 1;
+  filter: blur(14px);
+}
+
+/* Card body lift on hover */
+.project-2030 > div:last-child {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.4s ease;
+}
+
+.project-2030:hover > div:last-child {
+  transform: translateY(-3px);
+  box-shadow: 0 28px 80px -20px rgba(0, 0, 0, 0.85),
+              0 0 40px -10px rgba(249, 168, 37, 0.35);
+}
+
+/* Mobile strip: lighter blur to keep mobile fast */
+@media (max-width: 1023px) {
+  .project-2030--strip .project-2030-ring {
+    filter: blur(8px);
+    opacity: 0.55;
+  }
 }
 </style>
