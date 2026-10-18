@@ -133,7 +133,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
-        '/plantations/palm'
+        '/plantations/enugu-agidi-plantain'
       ]
     }
   },
