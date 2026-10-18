@@ -284,7 +284,7 @@
             Yields are historical averages and not a guarantee of future returns.
             All investments are subject to independent audit, agricultural risk, and
             applicable securities regulations. Download the full
-            <NuxtLink to="/legal/prospectus" class="underline decoration-dotted hover:text-leaf-600 dark:hover:text-leaf-400">
+            <NuxtLink to="/" class="underline decoration-dotted hover:text-leaf-600 dark:hover:text-leaf-400">
               investor prospectus
             </NuxtLink> for complete terms.
           </p>

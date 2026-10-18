@@ -477,7 +477,7 @@
             </svg>
           </NuxtLink>
 
-          <a
+          <!-- <a
             href="/pdfs/catalog.pdf"
             target="_blank"
             rel="noopener"
@@ -493,7 +493,7 @@
               <path d="M7 10l5 5 5-5M12 15V3"/>
             </svg>
             Download Catalog
-          </a>
+          </a> -->
         </div>
       </div>
 

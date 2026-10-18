@@ -233,7 +233,7 @@
           </div>
   
           <div class="lg:col-span-3 lg:text-right">
-            <a
+            <!-- <a
               href="/pdfs/methodology-2025.pdf"
               download
               class="inline-flex items-center gap-2
@@ -248,7 +248,7 @@
                 <path d="M14 2v6h6"/>
               </svg>
               Read methodology
-            </a>
+            </a> -->
           </div>
         </div>
   

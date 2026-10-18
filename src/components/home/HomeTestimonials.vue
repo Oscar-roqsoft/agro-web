@@ -195,7 +195,7 @@
           class="mt-16 lg:mt-20 text-center"
         >
           <NuxtLink
-            to="/case-studies"
+            to="/"
             class="group inline-flex items-center gap-2
                    text-leaf-600 dark:text-leaf-400
                    font-semibold text-[0.98rem]

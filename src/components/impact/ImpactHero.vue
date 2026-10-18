@@ -101,7 +101,7 @@
               ref="ctaRef"
               class="flex flex-wrap items-center gap-3.5 mb-12"
             >
-              <a
+              <!-- <a
                 href="/pdfs/impact-report-2025.pdf"
                 download
                 class="btn btn-primary !px-6 !py-3.5 !text-[0.95rem]"
@@ -113,7 +113,7 @@
                   <path d="M7 10l5 5 5-5M12 15V3"/>
                 </svg>
                 Download Report (PDF)
-              </a>
+              </a> -->
               <a
                 href="#read-online"
                 class="btn !px-6 !py-3.5 !text-[0.95rem]

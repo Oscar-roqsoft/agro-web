@@ -262,57 +262,67 @@
   
   /* -------- Data -------- */
   const milestones: Milestone[] = [
-    {
-      year: '2026',
-      title: 'Palm & Plantain Harvest',
-      description:
-        'Our mature palm groves and first plantain cycle deliver their second commercial harvest.',
-      crops: ['Oil Palm', 'Plantain'],
-      volume: '820 t',
-      image: '/timeline/plantain.jpg',
-      status: 'ready',
-    },
-    {
-      year: '2027',
-      title: 'First Cocoa Yield',
-      description:
-        'The Ikom cocoa farm reaches maturity — our first export-grade bean harvest ready for global buyers.',
-      crops: ['Cocoa'],
-      volume: '140 t',
-      image: '/timeline/cocoa.jpg',
-      status: 'maturing',
-    },
-    {
-      year: '2028',
-      title: 'Rubber Tapping Begins',
-      description:
-        'Uyo rubber estate enters production with a steady flow of natural latex for industrial partners.',
-      crops: ['Rubber'],
-      volume: '260 t',
-      image: '/timeline/rubber.jpg',
-      status: 'maturing',
-    },
-    {
-      year: '2029',
-      title: 'Cassava Processing Hub',
-      description:
-        'A new processing facility transforms our cassava into starch, flour, and ethanol for regional markets.',
-      crops: ['Cassava'],
-      volume: '1.2 kt',
-      image: '/timeline/rubber.jpg',
-      status: 'planting',
-    },
-    {
-      year: '2030',
-      title: 'Full Estate Maturity',
-      description:
-        'All six estates operating at peak yield — a fully integrated agribusiness with year-round output.',
-      crops: ['All Crops'],
-      volume: '3.5 kt',
-      image: '/timeline/crops.jpg',
-      status: 'planting',
-    },
-  ]
+  {
+    year: '2025',
+    title: 'Yam & Groundnut Harvest',
+    description:
+      'Our Ekwulobia yam estate and Ebonyi groundnut estate deliver their first full commercial harvests — extending the network beyond palm, plantain, rice, and pepper.',
+    crops: ['Yam', 'Groundnut'],
+    volume: '490 t',
+    image: '/images/yam1.jpg',
+    status: 'ready',
+  },
+  {
+    year: '2026',
+    title: 'Palm, Plantain & Rice at Full Cycle',
+    description:
+      'Achalla palm, Enugu Agidi plantain, and Ebonyi rice enter their second full commercial year — with the Lagos distribution hub scaling to handle the combined volume.',
+    crops: ['Oil Palm', 'Plantain', 'Rice'],
+    volume: '820 t',
+    image: '/images/plantain1.jpg',
+    status: 'ready',
+  },
+  {
+    year: '2027',
+    title: 'Bell Pepper Peak Season',
+    description:
+      'Rivers bell pepper estate hits full greenhouse-assisted capacity, with two full harvest cycles per year for fresh markets and processing buyers.',
+    crops: ['Bell Pepper'],
+    volume: '320 t',
+    image: '/images/bellpepper1.jpg',
+    status: 'ready',
+  },
+  {
+    year: '2028',
+    title: 'Achalla Palm Decade Milestone',
+    description:
+      'Ten years after planting, the Achalla palm estate completes its first decade of continuous production — a proof point for our South East palm model.',
+    crops: ['Oil Palm'],
+    volume: '1.3 kt',
+    image: '/images/palm1.jpg',
+    status: 'ready',
+  },
+  {
+    year: '2029',
+    title: 'Lagos Distribution Expansion',
+    description:
+      'The Lagos hub expands cold storage and export coordination capacity, unlocking national and export routes for all seven estates and facilities.',
+    crops: ['Distribution'],
+    volume: '2.4 kt',
+    image: '/images/distribution1.jpg',
+    status: 'planting',
+  },
+  {
+    year: '2030',
+    title: 'Full Network Maturity',
+    description:
+      'All estates operating at peak yield — a fully integrated agribusiness across Anambra, Ebonyi, Rivers, and Lagos with year-round output.',
+    crops: ['All Crops'],
+    volume: '4.5 kt',
+    image: '/images/distribution1.jpg',
+    status: 'planting',
+  },
+]
   
   /* -------- Style helpers -------- */
   const yearColor = (s: Status) =>

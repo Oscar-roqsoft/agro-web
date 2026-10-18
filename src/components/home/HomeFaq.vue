@@ -240,7 +240,7 @@
     {
       q: 'What are the risks of investing in long-gestation agriculture?',
       a: 'The main risks are weather, disease, and market price fluctuation. We manage them through crop diversification, insurance on every estate, and long-term contracts that lock in purchase prices. Our investor prospectus outlines all risk factors and historical variance in detail.',
-      link: { label: 'Download prospectus', href: '/legal/prospectus' },
+      link: { label: 'Download prospectus', href: '/' },
     },
     {
       q: 'Do you work with smallholder farmers or only large investors?',

@@ -114,7 +114,7 @@
                   <path d="M12 5v14M19 12l-7 7-7-7"/>
                 </svg>
               </a>
-              <NuxtLink
+              <!-- <NuxtLink
                 to="/legal/prospectus"
                 class="btn !px-6 !py-3.5 !text-[0.95rem]
                        bg-[rgb(var(--surface))]
@@ -130,7 +130,7 @@
                   <path d="M7 10l5 5 5-5M12 15V3"/>
                 </svg>
                 Download Prospectus
-              </NuxtLink>
+              </NuxtLink> -->
             </div>
   
             <!-- Trust markers row -->
