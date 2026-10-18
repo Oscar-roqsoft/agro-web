@@ -127,7 +127,9 @@
                      text-[clamp(1.75rem,3.5vw,2.5rem)] leading-[1.1]
                      tracking-[-0.025em] text-[rgb(var(--text))] mb-3"
             >
+            
               {{ featured.name }}
+            
             </h3>
   
             <div class="text-leaf-600 dark:text-leaf-400
@@ -382,10 +384,10 @@
       location: 'Anambra',
     },
     {
-      name: 'Emeka Christian Okeke',
+      name: 'Olisa Okeke',
       role: 'Chief Financial Officer',
       department: 'Finance',
-      photo: '/about/founder1.jpeg',
+      photo: '/about/founder4.jpeg',
       linkedin: 'https://linkedin.com',
       tenure: '8 years',
       location: 'Lagos',

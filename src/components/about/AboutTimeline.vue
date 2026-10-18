@@ -296,51 +296,58 @@
   const quoteRef        = ref<HTMLElement | null>(null)
   const itemRefs: HTMLElement[] = []
   
-  /* -------- Data -------- */
-  const milestones: Milestone[] = [
-    {
-      year: '2018',
-      tag: 'The Beginning',
-      title: 'A 40-hectare plot in Anambra State.',
-      description:
-        'Two brothers and a small team planted their first oil palm seedlings on family land — mostly by hand, with borrowed tools and a lot of hope.',
-    },
-    {
-      year: '2019',
-      tag: 'First Harvest',
-      title: 'Our first palm harvest ships.',
-      description:
-        'Three years after planting, the first commercial yield of palm oil was pressed and sold locally. It funded the nursery for the next phase.',
-    },
-    {
-      year: '2020',
-      tag: 'Expansion',
-      title: 'Three new estates acquired.',
-      description:
-        'We acquired land in Cross River, Enugu, and Akwa Ibom — diversifying into cocoa, rubber, and plantain. The company became a true multi-crop operation.',
-    },
-    {
-      year: '2020',
-      tag: 'Community',
-      title: 'The Outgrower Program launches.',
-      description:
-        'We began partnering with smallholder farmers — providing certified seedlings, training, and guaranteed purchase at fair-trade prices. 200+ farmers joined within two years.',
-    },
-    {
-      year: '2022',
-      tag: 'Sustainability',
-      title: 'Certified organic. Committed to net-zero.',
-      description:
-        'Rainforest Alliance and ISO 14001 certifications earned. We pledged to restore 500 hectares of degraded land and reach carbon neutrality across all estates by 2030.',
-    },
-    {
-      year: '2026',
-      tag: 'Today',
-      title: 'Six estates. 1,200+ hectares. And just getting started.',
-      description:
-        'With institutional investors on board and three new crops maturing over the next four years, we\'re building the foundation for the next generation of West African agriculture.',
-    },
-  ]
+/* -------- Data -------- */
+const milestones: Milestone[] = [
+  {
+    year: '2018',
+    tag: 'The Beginning',
+    title: 'A 40-hectare plot in Anambra State.',
+    description:
+      'Two brothers and a small team planted their first oil palm seedlings on family land in Achalla, Anambra State — mostly by hand, with borrowed tools and a lot of hope.',
+  },
+  {
+    year: '2019',
+    tag: 'First Harvest',
+    title: 'Our first palm harvest ships.',
+    description:
+      'Three years after planting, the first commercial yield of palm fruit was harvested and pressed locally. It funded the nursery for the next phase and proved the model could work.',
+  },
+  {
+    year: '2020',
+    tag: 'Expansion',
+    title: 'Plantain and yam estates added in Anambra.',
+    description:
+      'We expanded within Anambra — acquiring land for plantain at Enugu Agidi and yam at Ekwulobia. The company moved from a single-crop palm operation to a diversified South East portfolio.',
+  },
+  {
+    year: '2021',
+    tag: 'Logistics',
+    title: 'The Lagos distribution hub opens.',
+    description:
+      'Our Lagos general distribution office and central store opened — giving every estate a shared route to national markets, quality control, and cold storage under one roof.',
+  },
+  {
+    year: '2022',
+    tag: 'New Crops',
+    title: 'Rice, bell pepper, and groundnut estates established.',
+    description:
+      'We planted our Ebonyi rice estate and Rivers bell pepper estate, and began groundnut operations in Ebonyi. The network now spanned four states: Anambra, Ebonyi, Rivers, and Lagos.',
+  },
+  {
+    year: '2023',
+    tag: 'Community',
+    title: 'The Outgrower Program scales across all estates.',
+    description:
+      'We formalized partnerships with smallholder families across every estate — providing certified seedlings, agronomic training, and guaranteed purchase at fair prices. Over 400 farming families are now in the program.',
+  },
+  {
+    year: '2025',
+    tag: 'Today',
+    title: 'Seven estates and facilities. Four states. One network.',
+    description:
+      'With production across Anambra, Ebonyi, Rivers, and a Lagos distribution hub, our portfolio now spans plantain, oil palm, yam, rice, groundnut, and bell pepper — with the next harvest cycles maturing through 2028.',
+  },
+]
   
   /* ---------------------------------------------------------------
      GSAP — rail draw + card reveals + node activation

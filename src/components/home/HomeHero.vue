@@ -28,8 +28,10 @@
         :class="{ '!opacity-100': videoLoaded }"
         style="transition: opacity 1000ms ease;"
       >
+
         <source src="" type="video/webm" />
         <source src="" type="video/mp4" />
+        
       </video>
 
       <!-- Overlays — light mode -->
@@ -98,11 +100,12 @@
           <h1
             ref="headlineRef"
             class="font-display font-extrabold text-white
-                   text-[clamp(2.25rem,5.5vw,4.25rem)] leading-[1.05]
-                   tracking-[-0.03em] mb-6"
+                  text-[clamp(2.25rem,5.5vw,4.25rem)] leading-[1.05]
+                  tracking-[-0.03em] mb-6"
           >
-            Cultivating <span class="text-harvest-400">quality</span>,<br />
-            harvesting <span class="text-leaf-300">trust</span> for a
+            <span class="text-harvest-400">Chrismek Technology</span>
+            cultivates quality,<br />
+            harvests <span class="text-leaf-300">trust</span> for a
             greener tomorrow.
           </h1>
 
@@ -258,7 +261,7 @@
         <!-- ============ CHRISMek TECHNOLOGY CREDIT (added) ============ -->
         <div
       ref="creditRef"
-      class="absolute top-[450px] md:top-24 lg:top-28 right-6 lg:right-8 z-20
+      class="absolute top-[450px] md:top-24 lg:top-28 left-6 lg:right-8 z-20
              md:flex flex-col items-end gap-1
              pointer-events-none select-none"
     >
@@ -282,14 +285,14 @@
         </span>
 
         <!-- Text -->
-        <div class="flex flex-col leading-tight">
+        <!-- <div class="flex flex-col leading-tight">
           <span class="text-white/50 text-[0.58rem] uppercase tracking-[0.2em] font-bold">
             Crafted by
           </span>
           <span class="text-white font-display font-bold text-[0.82rem] tracking-tight">
             Chrismek Technology
           </span>
-        </div>
+        </div> -->
 
         <!-- External link icon -->
         <span

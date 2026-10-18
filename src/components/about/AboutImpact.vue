@@ -169,6 +169,7 @@
           </div>
   
           <div class="flex flex-wrap justify-center gap-3">
+
             <!-- <NuxtLink
               to="/impact-report"
               class="btn !px-6 !py-3.5
@@ -225,6 +226,8 @@
   const ctaRef      = ref<HTMLElement | null>(null)
   const statRefs: HTMLElement[] = []
   
+
+
   /* -------- Data -------- */
   const stats = [
     {

@@ -339,14 +339,23 @@
   
   /* -------- Icons -------- */
   const icons = {
-    palm: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12C12 7 8 3 3 3c0 5 4 9 9 9z"/><path d="M12 12c0-5 4-9 9-9 0 5-4 9-9 9z"/></svg>`,
-    cocoa: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="5" ry="10"/><path d="M12 2v20M7 8h10M7 12h10M7 16h10"/></svg>`,
-    plantain: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10c4-6 12-6 16 0M6 14c4-5 12-5 16 0M8 18c4-4 12-4 16 0"/></svg>`,
-    rubber: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-6M8 8h8M8 16h8"/><circle cx="12" cy="12" r="4"/></svg>`,
-    cassava: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M8 6l4 4 4-4M8 14l4 4 4-4"/></svg>`,
-    vegetables: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>`,
-    maize: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c4 4 4 16 0 20M12 2c-4 4-4 16 0 20M8 6c3 1 5 3 5 6M16 6c-3 1-5 3-5 6"/></svg>`,
-  }
+  // ---------------- Real crops (kept or added) ----------------
+  palm: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12C12 7 8 3 3 3c0 5 4 9 9 9z"/><path d="M12 12c0-5 4-9 9-9 0 5-4 9-9 9z"/></svg>`,
+
+  plantain: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10c4-6 12-6 16 0M6 14c4-5 12-5 16 0M8 18c4-4 12-4 16 0"/></svg>`,
+
+  // NEW — Yam: a tuber with root hairs
+  yam: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20c-2-1-3-3-3-6 0-4 3-8 7-8s7 4 7 8c0 3-1 5-3 6-2 1-6 1-8 0z"/><path d="M9 9c1 1 5 1 6 0M10 13c1 1 3 1 4 0"/><path d="M6 20l-2 2M18 20l2 2"/></svg>`,
+
+  // NEW — Rice: a grain stalk with grains
+  rice: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V6"/><path d="M9 9c-2 0-3 1-3 3s1 3 3 3M15 9c2 0 3 1 3 3s-1 3-3 3"/><path d="M9 15c-2 0-3 1-3 3s1 3 3 3M15 15c2 0 3 1 3 3s-1 3-3 3"/></svg>`,
+
+  // NEW — Groundnut: a peanut shell with pod texture
+  groundnut: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3c-2 0-3 2-3 4s1 3 2 3c1 1 1 2 1 3s-1 2-2 3c-1 1-1 2-1 3 0 2 1 3 3 3s3-1 3-3c0-1 0-2-1-3s-1-2-1-3 1-2 2-3c1-1 1-2 1-3 0-2-1-4-3-4z"/><path d="M9 8v1M9 14v1"/></svg>`,
+
+  // NEW — Bell Pepper: a pepper with stem and lobes
+  pepper: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6c-3 0-5 2-5 5s2 8 5 10c1 1 2 1 3 0s2-1 3 0c1 1 2 1 3 0 3-2 5-7 5-10s-2-5-5-5"/><path d="M12 6V3M10 4c1-1 3-1 4 0"/></svg>`,
+}
   
   const highlightIcons = {
     trend: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>`,
@@ -376,63 +385,79 @@
   }
   
   const harvestMatrix: CropRow[] = [
-    {
-      name: 'Palm Oil',
-      estate: 'Okitipupa Estate',
-      icon: icons.palm,
-      months: ['peak','peak','peak','peak','peak','peak','peak','peak','peak','peak','peak','peak'],
-      volumes: { 0: '320t', 3: '340t', 6: '310t', 9: '350t' },
-    },
-    {
-      name: 'Palm Kernel',
-      estate: 'Okitipupa Estate',
-      icon: icons.palm,
-      months: ['peak','peak','peak','peak','peak','peak','peak','peak','peak','peak','peak','peak'],
-      volumes: { 0: '48t', 3: '52t', 6: '46t', 9: '54t' },
-    },
-    {
-      name: 'Cocoa Beans',
-      estate: 'Ikom Farm',
-      icon: icons.cocoa,
-      months: ['off','off','off','off','off','off','growing','growing','peak','peak','peak','growing'],
-      volumes: { 9: '180t', 10: '210t', 11: '140t' },
-    },
-    {
-      name: 'Plantain',
-      estate: 'Abeokuta Belt',
-      icon: icons.plantain,
-      months: ['growing','growing','growing','growing','peak','peak','peak','peak','growing','growing','growing','growing'],
-      volumes: { 4: '280t', 5: '320t', 6: '290t', 7: '260t' },
-    },
-    {
-      name: 'Rubber',
-      estate: 'Uyo Estate',
-      icon: icons.rubber,
-      months: ['off','off','growing','growing','growing','growing','growing','growing','growing','growing','off','off'],
-      volumes: { 6: '—', 7: '—', 8: '—' },
-    },
-    {
-      name: 'Cassava',
-      estate: 'Badagry Fields',
-      icon: icons.cassava,
-      months: ['peak','peak','growing','growing','growing','growing','growing','growing','growing','growing','peak','peak'],
-      volumes: { 0: '120t', 11: '140t' },
-    },
-    {
-      name: 'Vegetables',
-      estate: 'Epe Mixed Farm',
-      icon: icons.vegetables,
-      months: ['peak','peak','peak','peak','growing','off','off','off','growing','peak','peak','peak'],
-      volumes: { 0: '65t', 3: '70t', 9: '72t' },
-    },
-    {
-      name: 'Maize',
-      estate: 'Epe Mixed Farm',
-      icon: icons.maize,
-      months: ['off','off','off','growing','growing','growing','peak','peak','peak','growing','off','off'],
-      volumes: { 6: '95t', 7: '110t', 8: '88t' },
-    },
-  ]
+  // ------------------------------------------------------------
+  // ANAMBRA — Oil Palm (Achalla)
+  // ------------------------------------------------------------
+  {
+    name: 'Oil Palm',
+    estate: 'Achalla Palm Estate',
+    icon: icons.palm,
+    months: ['peak','peak','peak','peak','peak','peak','peak','peak','peak','peak','peak','peak'],
+    volumes: { 0: '320t', 3: '340t', 6: '310t', 9: '350t' },
+  },
+  {
+    name: 'Palm Kernel',
+    estate: 'Achalla Palm Estate',
+    icon: icons.palm,
+    months: ['peak','peak','peak','peak','peak','peak','peak','peak','peak','peak','peak','peak'],
+    volumes: { 0: '48t', 3: '52t', 6: '46t', 9: '54t' },
+  },
+
+  // ------------------------------------------------------------
+  // ANAMBRA — Plantain (Enugu Agidi)
+  // ------------------------------------------------------------
+  {
+    name: 'Plantain',
+    estate: 'Enugu Agidi Plantain Estate',
+    icon: icons.plantain,
+    months: ['growing','growing','growing','growing','peak','peak','peak','peak','growing','growing','growing','growing'],
+    volumes: { 4: '280t', 5: '320t', 6: '290t', 7: '260t' },
+  },
+
+  // ------------------------------------------------------------
+  // ANAMBRA — Yam (Ekwulobia)
+  // ------------------------------------------------------------
+  {
+    name: 'Yam',
+    estate: 'Ekwulobia Yam Estate',
+    icon: icons.yam,
+    months: ['off','off','off','off','off','off','growing','growing','growing','peak','peak','peak'],
+    volumes: { 9: '150t', 10: '180t', 11: '160t' },
+  },
+
+  // ------------------------------------------------------------
+  // EBONYI — Rice
+  // ------------------------------------------------------------
+  {
+    name: 'Rice',
+    estate: 'Ebonyi Rice Estate',
+    icon: icons.rice,
+    months: ['off','off','off','growing','growing','growing','growing','growing','peak','peak','peak','off'],
+    volumes: { 8: '420t', 9: '460t', 10: '380t' },
+  },
+
+  // ------------------------------------------------------------
+  // EBONYI — Groundnut
+  // ------------------------------------------------------------
+  {
+    name: 'Groundnut',
+    estate: 'Ebonyi Groundnut Estate',
+    icon: icons.groundnut,
+    months: ['off','off','off','growing','growing','growing','growing','peak','peak','peak','growing','off'],
+    volumes: { 7: '110t', 8: '125t', 9: '98t' },
+  },
+
+  // ------------------------------------------------------------
+  // RIVERS — Bell Pepper
+  // ------------------------------------------------------------
+  {
+    name: 'Bell Pepper',
+    estate: 'Rivers Bell Pepper Estate',
+    icon: icons.pepper,
+    months: ['peak','peak','peak','growing','growing','growing','peak','peak','peak','growing','growing','peak'],
+    volumes: { 0: '70t', 6: '85t', 8: '90t', 11: '75t' },
+  },
+]
   
   /* -------- Cell color helper -------- */
   const cellColor = (status: string) => {

@@ -441,7 +441,7 @@ const ctaRef     = ref<HTMLElement | null>(null)
 const estates = estatesData
 
 /* -------- Filter options -------- */
-const cropOptions = ['All', 'Palm', 'Cocoa', 'Plantain', 'Rubber', 'Cassava', 'Vegetables']
+const cropOptions = ['All', 'Palm', 'Yam', 'Plantain', 'Groundnut', 'Rice', 'Bell Pepper']
 
 const stateOptions = computed(() => {
   const set = new Set(estates.map((e) => e.state))

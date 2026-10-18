@@ -77,7 +77,7 @@
               ref="leadRef"
               class="text-[rgb(var(--text-muted))] text-[1.08rem] leading-relaxed mb-8 max-w-xl"
             >
-              We started with a single 40-hectare plot in Ondo State — a family
+              We started with a single 20-hectare plot in Anambra State — a family
               convinced that long-term agriculture, done right, could rebuild
               rural economies. Today we manage six estates across Nigeria,
               employing over 340 people and supporting hundreds more through

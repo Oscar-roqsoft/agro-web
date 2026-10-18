@@ -299,49 +299,60 @@
     { name: 'WhatsApp',  href: 'https://wa.me/+2348167037048', icon: icons.whatsapp },
   ]
   
-  /* -------- Link columns -------- */
   const linkColumns = [
-    {
-      title: 'Company',
-      links: [
-        { label: 'About Us',      href: '/about' },
-        { label: 'Our Process',   href: '/process' },
-        { label: 'Sustainability', href: '/sustainability' },
-        // { label: 'Careers',       href: '/careers' },
-        { label: 'Contact',       href: '/contact' },
-      ],
-    },
-    {
-      title: 'Estates',
-      links: [
-        { label: 'Palm Plantations', href: '/plantations/palm' },
-        { label: 'Cocoa Farms',      href: '/plantations/cocoa' },
-        { label: 'Rubber Estates',   href: '/plantations/rubber' },
-        { label: 'Plantain Belt',    href: '/plantations/plantain' },
-        { label: 'All Estates',      href: '/plantations' },
-      ],
-    },
-    {
-      title: 'Resources',
-      links: [
-        { label: 'Harvest Calendar', href: '/harvest-calendar' },
-        // { label: 'Blog & News',      href: '/blog' },
-        { label: 'Impact Report',    href: '/impact-report' },
-        { label: 'Case Studies',     href: '/case-studies' },
-        { label: 'FAQ',              href: '/faq' },
-      ],
-    },
-    // {
-    //   title: 'Investors',
-    //   links: [
-    //     { label: 'Invest Overview', href: '/invest' },
-    //     { label: 'Packages',        href: '/invest/packages' },
-    //     { label: 'Prospectus',      href: '/legal/prospectus' },
-    //     { label: 'ROI Calculator',  href: '/invest/calculator' },
-    //     { label: 'Book a Call',     href: '/contact?type=investor' },
-    //   ],
-    // },
-  ]
+  {
+    title: 'Company',
+    links: [
+      { label: 'About Us',       href: '/about' },
+      { label: 'Our Process',    href: '/process' },
+      { label: 'Sustainability', href: '/sustainability' },
+      // { label: 'Careers',     href: '/careers' },
+      { label: 'Contact',        href: '/contact' },
+    ],
+  },
+  {
+    title: 'Our Estates',
+    links: [
+      { label: 'Anambra Estates',        href: '/plantations?state=anambra' },
+      { label: 'Ebonyi Estates',         href: '/plantations?state=ebonyi' },
+      { label: 'Rivers Estate',          href: '/plantations/rivers-bell-pepper' },
+      { label: 'Lagos Distribution Hub', href: '/plantations/lagos-distribution' },
+      { label: 'All Estates',            href: '/plantations' },
+    ],
+  },
+  {
+    title: 'Our Crops',
+    links: [
+      { label: 'Oil Palm',    href: '/plantations/achalla-palm' },
+      { label: 'Plantain',    href: '/plantations/enugu-agidi-plantain' },
+      { label: 'Yam',         href: '/plantations/ekwulobia-yam' },
+      { label: 'Rice',        href: '/plantations/ebonyi-rice' },
+      { label: 'Groundnut',   href: '/plantations/ebonyi-groundnut' },
+      { label: 'Bell Pepper', href: '/plantations/rivers-bell-pepper' },
+      { label: 'All Estates', href: '/plantations' },
+    ],
+  },
+  {
+    title: 'Resources',
+    links: [
+      { label: 'Harvest Calendar', href: '/harvest-calendar' },
+      // { label: 'Blog & News',   href: '/blog' },
+      { label: 'Impact Report',    href: '/impact-report' },
+      { label: 'Case Studies',     href: '/case-studies' },
+      { label: 'FAQ',              href: '/faq' },
+    ],
+  },
+  // {
+  //   title: 'Investors',
+  //   links: [
+  //     { label: 'Invest Overview', href: '/invest' },
+  //     { label: 'Packages',        href: '/invest/packages' },
+  //     { label: 'Prospectus',      href: '/legal/prospectus' },
+  //     { label: 'ROI Calculator',  href: '/invest/calculator' },
+  //     { label: 'Book a Call',     href: '/contact?type=investor' },
+  //   ],
+  // },
+]
   
   const legalLinks = [
     // { label: 'Privacy Policy', href: '/legal/privacy' },

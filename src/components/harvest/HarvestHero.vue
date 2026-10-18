@@ -347,7 +347,7 @@
     },
     {
       title: 'All estates',
-      subtitle: 'Palm, cocoa, plantain, rubber & more',
+      subtitle: 'Palm, groundnut, plantain, rice & more',
       icon: icons.globe,
     },
   ]
@@ -365,7 +365,7 @@
   ]
   
   /* -------- Crops currently in season -------- */
-  const inSeasonCrops = ['Palm Oil', 'Palm Kernel', 'Vegetables', 'Maize']
+  const inSeasonCrops = ['Palm Oil', 'Palm Kernel', 'Groundnut', 'Rice']
   
   /* -------- Refs -------- */
   const sectionRef     = ref<HTMLElement | null>(null)
