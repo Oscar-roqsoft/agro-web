@@ -384,7 +384,7 @@
       location: 'Anambra',
     },
     {
-      name: 'Olisa Okeke',
+      name: 'Olisa Ezeigwe',
       role: 'Chief Financial Officer',
       department: 'Finance',
       photo: '/about/founder4.jpeg',
