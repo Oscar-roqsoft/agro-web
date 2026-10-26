@@ -338,7 +338,7 @@
       { label: 'Harvest Calendar', href: '/harvest-calendar' },
       // { label: 'Blog & News',   href: '/blog' },
       { label: 'Impact Report',    href: '/impact-report' },
-      { label: 'Case Studies',     href: '/case-studies' },
+      // { label: 'Case Studies',     href: '/case-studies' },
       { label: 'FAQ',              href: '/faq' },
     ],
   },
