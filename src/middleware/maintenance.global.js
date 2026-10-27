@@ -1,6 +1,6 @@
 
 export default defineNuxtRouteMiddleware((to) => {
-    const maintenanceMode = true
+    const maintenanceMode = false
   
     if (maintenanceMode && to.path !== '/maintenance') {
       return navigateTo('/maintenance')
